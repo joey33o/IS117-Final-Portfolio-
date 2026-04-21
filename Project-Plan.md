@@ -219,6 +219,7 @@ Planned spec files:
 - sprint-01b-configure-tailwind-and-postcss.md
 - sprint-01c-create-layout-and-global-tokens.md
 - sprint-01d-verify-build-and-root-restrictions.md
+- sprint-01e-apply-contrast-direction-black-yellow.md
 - sprint-02a-define-content-types.md
 - sprint-02b-create-single-project-dataset.md
 - sprint-02c-add-proof-copy-and-claims-mapping.md
@@ -228,6 +229,7 @@ Planned spec files:
 - sprint-03c-add-high-contrast-accessible-nav-state.md
 - sprint-03d-keyboard-and-focus-nav-validation.md
 - sprint-04a-hero-headline-and-lead-structure.md
+- sprint-04e-hero-readability-refinement.md
 - sprint-04b-grid-aligned-asymmetry-layout.md
 - sprint-04c-hero-top-visual-and-artifact-placement.md
 - sprint-04d-typography-measure-and-rhythm-polish.md
