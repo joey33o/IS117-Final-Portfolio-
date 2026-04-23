@@ -1,4 +1,4 @@
-﻿# Sprint: 02c add proof copy and claims mapping
+﻿# Sprint: 02b create single project dataset
 
 ## Objective
 Deliver the sprint outcome as defined in Project-Plan.md for the Hero single-project portfolio.
@@ -16,13 +16,13 @@ Deliver the sprint outcome as defined in Project-Plan.md for the Hero single-pro
 - Active branch and environment readiness
 
 ## Implementation Tasks
-- [ ] Prepare implementation approach
-- [ ] Apply focused changes
-- [ ] Validate outcome for this sprint
+- [x] Prepare implementation approach
+- [x] Apply focused changes
+- [x] Validate outcome for this sprint
 
 ## Acceptance Criteria
-- [ ] Sprint objective is fully implemented
-- [ ] Quality checks pass for modified areas
+- [x] Sprint objective is fully implemented
+- [x] Quality checks pass for modified areas
 
 ## Verification Steps
 1. Run required commands from website/
@@ -35,11 +35,11 @@ Deliver the sprint outcome as defined in Project-Plan.md for the Hero single-pro
 
 ## Sprint Status Board
 ### Planned
-- [ ] Sprint created
-- [ ] Tasks not started
+- [x] Sprint created
+- [x] Tasks not started
 
 ### Active
 - [ ] None
 
 ### Completed
-- [ ] None
+- [x] Single-project dataset created and build verified

@@ -1,3 +1,5 @@
+import { singleProjectProof as proof } from "@/src/content/project-proof";
+
 export default function Home() {
   return (
     <div className="page-shell flex-1">
@@ -8,17 +10,21 @@ export default function Home() {
           </p>
           <a
             className="border-[3px] border-[var(--border-color)] bg-[var(--accent-color)] px-4 py-2 text-xs font-black uppercase tracking-[0.12em] text-[#0a0a0a]"
-            href="https://github.com/"
+            href={proof.ctaHref}
             target="_blank"
             rel="noreferrer"
           >
-            Audit My Code On GitHub
+            {proof.ctaLabel}
           </a>
         </div>
       </header>
 
       <main className="grid-wrap py-8 md:py-12">
-        <section className="hero-panel grid gap-6 border-[3px] border-[var(--border-color)] p-6 md:grid-cols-12 md:p-8">
+        {/* ── Hero Panel ── */}
+        <section
+          className="hero-panel grid gap-6 border-[3px] border-[var(--border-color)] p-6 md:grid-cols-12 md:p-8"
+          aria-label="Hero — professional promise"
+        >
           <div className="md:col-span-8 relative z-[1]">
             <div className="hero-copy">
               <p className="hero-kicker mb-3 text-xs font-black uppercase tracking-[0.18em]">
@@ -35,41 +41,50 @@ export default function Home() {
               </p>
             </div>
           </div>
+
           <aside className="md:col-span-4 relative z-[1] border-[2px] border-[var(--border-color)] bg-[rgba(8,8,8,0.84)] p-4">
             <p className="text-xs font-black uppercase tracking-[0.14em]">
               First Proof
             </p>
             <p className="mt-3 text-sm leading-6">
-              Single-project masterclass with explicit challenge, architecture,
-              and manual audit evidence.
+              {proof.problemGoal}
             </p>
           </aside>
         </section>
 
-        <section className="content-card mt-6 grid gap-4 border-[3px] border-[var(--border-color)] p-6 md:p-8">
+        {/* ── Project Proof Block ── */}
+        <section
+          className="content-card mt-6 grid gap-4 border-[3px] border-[var(--border-color)] p-6 md:p-8"
+          aria-label="Project proof block"
+        >
           <h2 className="text-2xl font-black uppercase md:text-3xl">
-            Project Proof Block
+            {proof.blockTitle}
           </h2>
 
+          {/* Artifact */}
           <div className="border-[2px] border-[var(--border-color)] bg-[#0f0f0f] p-4">
             <p className="text-xs font-black uppercase tracking-[0.14em]">
-              Artifact
+              {proof.artifactTitle}
             </p>
             <pre className="mt-3 overflow-x-auto bg-[var(--panel-muted)] p-4 text-sm font-mono leading-6 text-[var(--text-color)]">
-{`const promise = "AI-AUGMENTED. HUMAN-AUDITED. BUILT TO SCALE.";
-const audit = {
-  foundByHuman: 1,
-  fixedByHuman: 1,
-  status: "verified"
-};`}
+              {proof.artifactSnippet}
             </pre>
           </div>
 
+          {/* Impact */}
+          <div className="border-[2px] border-[var(--border-color)] bg-[#0f0f0f] p-4">
+            <p className="text-xs font-black uppercase tracking-[0.14em] text-[var(--accent-color)]">
+              Impact
+            </p>
+            <p className="mt-2 text-sm leading-6">{proof.impact}</p>
+          </div>
+
+          {/* Method Note */}
           <div className="grid gap-4 md:grid-cols-3">
             <article className="border-[2px] border-[var(--border-color)] bg-[#0f0f0f] p-4">
               <h3 className="text-sm font-black uppercase">The Challenge</h3>
               <p className="mt-2 text-sm leading-6">
-                Convert fast AI output into employer-trustworthy production work.
+                {proof.methodNote.challenge}
               </p>
             </article>
             <article className="border-[2px] border-[var(--border-color)] bg-[#0f0f0f] p-4">
@@ -77,44 +92,58 @@ const audit = {
                 The Architectural Choice
               </h3>
               <p className="mt-2 text-sm leading-6">
-                Strong typed contracts, measurable checks, and narrow sprint slices.
+                {proof.methodNote.architecturalChoice}
               </p>
             </article>
             <article className="border-[2px] border-[var(--border-color)] bg-[#0f0f0f] p-4">
               <h3 className="text-sm font-black uppercase">The Audit</h3>
               <p className="mt-2 text-sm leading-6">
-                Human review found one logic gap and one copy inconsistency, both
-                fixed and revalidated in build checks.
+                {proof.methodNote.audit}
               </p>
             </article>
           </div>
 
+          {/* Caption */}
+          <p className="border-l-[3px] border-[var(--accent-color)] pl-4 text-sm font-semibold italic leading-6">
+            {proof.caption}
+          </p>
+
+          {/* Specs Table */}
           <div className="overflow-x-auto border-[2px] border-[var(--border-color)]">
             <table className="w-full border-collapse text-left text-sm">
               <caption className="border-b-[2px] border-[var(--border-color)] bg-[var(--panel-muted)] p-3 text-left text-xs font-black uppercase tracking-[0.14em] text-[var(--accent-color)]">
                 Project Specs Table
               </caption>
               <tbody>
-                <tr className="border-b-[2px] border-[var(--border-color)]">
-                  <th className="w-1/2 border-r-[2px] border-[var(--border-color)] p-3 font-black uppercase">
-                    Test Coverage
-                  </th>
-                  <td className="p-3">Baseline set for sprint validation</td>
-                </tr>
-                <tr className="border-b-[2px] border-[var(--border-color)]">
-                  <th className="border-r-[2px] border-[var(--border-color)] p-3 font-black uppercase">
-                    Performance
-                  </th>
-                  <td className="p-3">Static Next.js route build passed</td>
-                </tr>
-                <tr>
-                  <th className="border-r-[2px] border-[var(--border-color)] p-3 font-black uppercase">
-                    Stack
-                  </th>
-                  <td className="p-3">Next.js, TypeScript, Tailwind CSS</td>
-                </tr>
+                {proof.specs.map((metric, i) => (
+                  <tr
+                    key={metric.label}
+                    className={
+                      i < proof.specs.length - 1
+                        ? "border-b-[2px] border-[var(--border-color)]"
+                        : ""
+                    }
+                  >
+                    <th className="w-1/3 border-r-[2px] border-[var(--border-color)] p-3 font-black uppercase align-top">
+                      {metric.label}
+                    </th>
+                    <td className="p-3 align-top">{metric.value}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
+          </div>
+
+          {/* Primary CTA */}
+          <div className="flex justify-end pt-2">
+            <a
+              href={proof.ctaHref}
+              target="_blank"
+              rel="noreferrer"
+              className="border-[3px] border-[var(--border-color)] bg-[var(--accent-color)] px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-[#0a0a0a]"
+            >
+              {proof.ctaLabel}
+            </a>
           </div>
         </section>
       </main>
