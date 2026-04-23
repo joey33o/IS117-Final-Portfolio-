@@ -66,9 +66,7 @@ export default function Home() {
             <p className="text-xs font-black uppercase tracking-[0.14em]">
               {proof.artifactTitle}
             </p>
-            <pre className="mt-3 overflow-x-auto bg-[var(--panel-muted)] p-4 text-sm font-mono leading-6 text-[var(--text-color)]">
-              {proof.artifactSnippet}
-            </pre>
+            <pre className="mt-3 overflow-x-auto bg-[var(--panel-muted)] p-4 text-sm font-mono leading-6 text-[var(--text-color)]">{proof.artifactSnippet}</pre>
           </div>
 
           {/* Impact */}
