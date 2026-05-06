@@ -13,16 +13,20 @@ Create a working Next.js App Router project in `website/` with Tailwind enabled 
 - No final hero/proof content
 - No deployment yet
 
-## Commands (run from repo root)
-1. Create the Next.js app inside `website/`:
-   - `cd website`
-   - `npm create next-app@latest . -- --ts --app --src-dir --eslint --tailwind`
+## Commands
+Important:
+- Run commands from `website/`.
+- If you accidentally run `npm run dev` from repo root, npm will fail because there is no root `package.json`.
+
+Create the Next.js app inside `website/`:
+- `cd website`
+- `npm create next-app@latest . -- --ts --app --eslint --tailwind --import-alias "@/*"`
 
 If the scaffold prompts interactively, choose:
 - App Router: Yes
 - TypeScript: Yes
 - Tailwind: Yes
-- src/ directory: Yes
+- src/ directory: No (we keep App Router in `website/app/` and create `website/src/` later for content/components)
 
 ## Required file contents
 
@@ -30,9 +34,7 @@ If the scaffold prompts interactively, choose:
 Replace with:
 
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   /* Colors */
@@ -84,6 +86,16 @@ body {
   outline: var(--border-w) solid var(--accent-color);
   outline-offset: 2px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
 ```
 
 ### website/app/layout.tsx
@@ -104,10 +116,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="h-full antialiased">
+      <body className="min-h-full">
         <div className="min-h-screen">
-          <header className="border-b-[var(--border-w)] border-[var(--border-color)]">
+          <header
+            className="border-solid"
+            style={{ borderBottomWidth: "var(--border-w)", borderColor: "var(--border-color)" }}
+          >
             <div className="mx-auto max-w-6xl px-4 py-4">
               <div className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-12">
                 <div className="col-span-4 md:col-span-6 lg:col-span-12">
@@ -120,12 +135,15 @@ export default function RootLayout({
             </div>
           </header>
 
-          <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
+          <main id="main" className="mx-auto max-w-6xl px-4 py-8">
+            {children}
+          </main>
 
-          <footer className="border-t-[var(--border-w)] border-[var(--border-color)]">
-            <div className="mx-auto max-w-6xl px-4 py-6 text-sm">
-              Built with human audit discipline.
-            </div>
+          <footer
+            className="border-solid"
+            style={{ borderTopWidth: "var(--border-w)", borderColor: "var(--border-color)" }}
+          >
+            <div className="mx-auto max-w-6xl px-4 py-6 text-sm">Built with human audit discipline.</div>
           </footer>
         </div>
       </body>
@@ -159,6 +177,10 @@ export default function Home() {
 From `website/`:
 - `npm run dev`
 - `npm run build`
+
+If you want to run from the repo root instead:
+- `npm --prefix website run dev`
+- `npm --prefix website run build`
 
 Expected:
 - Dev server runs

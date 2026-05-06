@@ -2,11 +2,13 @@
 
 :root {
   /* Colors */
-  --bg-color: #f3f3ef;
-  --text-color: #101010;
-  --surface-color: #ffffff;
-  --border-color: #111111;
-  --accent-color: #0a84ff;
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --surface-color: #0b0b0b;
+  --border-color: #ffd400;
+  --accent-color: #ffd400;
+  --accent-2-color: #33d6ff;
+  --focus-color: var(--accent-2-color);
 
   /* Typography */
   --font-primary: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji",
@@ -35,7 +37,13 @@ body {
 }
 
 body {
-  background: var(--bg-color);
+  background-color: var(--bg-color);
+  background-image:
+    radial-gradient(900px 500px at 18% 12%, rgba(255, 212, 0, 0.14), transparent 60%),
+    radial-gradient(750px 520px at 82% 28%, rgba(255, 212, 0, 0.09), transparent 62%),
+    radial-gradient(520px 520px at 58% 88%, rgba(255, 212, 0, 0.06), transparent 60%),
+    repeating-linear-gradient(135deg, rgba(255, 212, 0, 0.06) 0 2px, transparent 2px 26px);
+  background-attachment: fixed;
   color: var(--text-color);
   font-family: var(--font-primary);
 }
@@ -45,9 +53,39 @@ body {
   border-radius: 0 !important;
 }
 
+/* Exception: allow the Hero poster card to be rounded */
+.allow-radius,
+.allow-radius * {
+  border-radius: 1.25rem !important;
+}
+
+/* Poster-style depth without shadows: offset border behind a panel */
+.pop-panel {
+  position: relative;
+  z-index: 0;
+}
+
+.pop-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(10px, 10px);
+  border: var(--border-w) solid var(--border-color);
+  z-index: -1;
+}
+
+.poster-header {
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.panel-surface {
+  background: var(--surface-color);
+}
+
 /* Visible focus always */
 :focus-visible {
-  outline: var(--border-w) solid var(--accent-color);
+  outline: var(--border-w) solid var(--focus-color);
   outline-offset: 2px;
 }
 

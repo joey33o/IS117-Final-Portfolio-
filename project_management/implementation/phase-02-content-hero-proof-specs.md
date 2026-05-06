@@ -13,6 +13,11 @@ Implement the single-project proof framework (artifact/impact/method/audit/specs
 - No extra pages
 - No animations or scroll effects
 
+## Important repo notes (from Phase 01)
+- `@/*` maps to the `website/` folder root (see `website/tsconfig.json`).
+- This phase uses `website/src/` for content + components while keeping App Router in `website/app/`.
+- Imports will look like `@/src/...`.
+
 ## Create these files
 
 ### website/src/content/types.ts
@@ -66,7 +71,7 @@ export const projectProof: ProjectProof = {
   githubUrl: "https://github.com/<your-username>/<your-repo>",
   specs: [
     { label: "Tech stack", value: "Next.js (App Router), TypeScript, Tailwind" },
-    { label: "Build", value: "Static export (out/)" },
+    { label: "Build", value: "Static prerender (Phase 01/02)" },
     { label: "Tests", value: "<test count or coverage>" },
     { label: "Performance", value: "<metric, e.g., Lighthouse or load timing>" },
     { label: "Validation", value: "Keyboard nav + focus visibility verified" },

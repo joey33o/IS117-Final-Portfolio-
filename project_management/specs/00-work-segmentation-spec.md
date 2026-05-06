@@ -8,7 +8,7 @@ Establish lightweight execution discipline for building the Hero single-project 
 
 - Define how work is split into small, verifiable phases
 - Define implementation governance:
-  - `implementation/` contains a small set of phase playbooks
+  - `project_management/implementation/` contains a small set of phase playbooks
   - Each phase playbook includes the exact commands + code snippets needed to complete the specs
 - Define completion gates for moving to the next phase
 
@@ -25,7 +25,7 @@ Establish lightweight execution discipline for building the Hero single-project 
 ## 5. Implementation Tasks
 
 - [ ] Create and maintain `project_management/specs/` as the spec source of truth
-- [ ] Create and maintain `implementation/` phase playbooks
+- [ ] Create and maintain `project_management/implementation/` phase playbooks
 - [ ] Keep the number of phase files small to reduce churn
 - [ ] Enforce “website-only runnable code” rule
 
@@ -40,13 +40,13 @@ Establish lightweight execution discipline for building the Hero single-project 
 ## 7. Verification Steps
 
 1. Confirm folder structure matches governance rules
-2. Confirm phase playbooks exist under `implementation/`
+2. Confirm phase playbooks exist under `project_management/implementation/`
 3. Confirm runnable app code exists only under `website/`
 
 ## 8. Deliverables
 
 - `project_management/specs/00-work-segmentation-spec.md`
-- Phase playbooks under `implementation/`
+- Phase playbooks under `project_management/implementation/`
 
 ## 9. Status Board
 
@@ -57,7 +57,7 @@ Establish lightweight execution discipline for building the Hero single-project 
 
 ### Active
 
-- [ ] (not used — phases tracked in `implementation/`)
+- [ ] (not used — phases tracked in `project_management/implementation/`)
 
 ### Completed
 
