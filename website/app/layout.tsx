@@ -23,8 +23,10 @@ export default function RootLayout({
               <div className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-12">
                 <div className="col-span-4 md:col-span-6 lg:col-span-12">
                   <div className="flex items-baseline justify-between gap-4">
-                    <div className="font-semibold tracking-tight">Your Name</div>
-                    <div className="text-sm">Single-Project Portfolio</div>
+                    <div className="font-semibold tracking-tight">Joseph Martinez</div>
+                    <div className="text-sm text-right uppercase tracking-[0.22em]">
+                      Newark, NJ • Seeking web design internships with systems and full stack integration
+                    </div>
                   </div>
                 </div>
               </div>

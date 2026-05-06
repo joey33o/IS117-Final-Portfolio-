@@ -15,8 +15,14 @@ export default function Home() {
               <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
               <span>Front-End Developer · Systems-minded</span>
             </div>
-            <h1 className="text-4xl font-black tracking-tight">AI-AUGMENTED. HUMAN-AUDITED. BUILT TO SCALE.</h1>
-            <p className="mt-4 max-w-[var(--measure)]">
+
+            <h1 className="mt-5 text-5xl font-black leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
+              AI-AUGMENTED. HUMAN-AUDITED.
+              <br />
+              BUILT TO SCALE.
+            </h1>
+
+            <p className="mt-6 max-w-[var(--measure)]">
               I use AI for speed, but I ship only what I can explain, verify, and maintain.
             </p>
             <p className="mt-2 max-w-[var(--measure)]">
@@ -24,21 +30,29 @@ export default function Home() {
             </p>
             <p className="mt-2 max-w-[var(--measure)]">If I can’t explain it, it doesn’t ship.</p>
 
+            <div className="mt-6 flex flex-wrap gap-3">
+              <span className="inline-flex items-center border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
+                Employers investing in a reliable developer
+              </span>
+              <span className="inline-flex items-center border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
+                Hero × Audit discipline
+              </span>
+            </div>
+
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
                 className="inline-flex items-center justify-center border-[var(--border-w)] border-[var(--border-color)] bg-[var(--accent-color)] px-4 py-3 font-black uppercase tracking-tight text-[var(--bg-color)] transition-colors hover:bg-[var(--accent-2-color)]"
-                href="mailto:jm2569@njit.edu"
+                href="#contact"
               >
-                Email Joseph
+                Contact Me
               </a>
-              <a
-                className="inline-flex items-center justify-center border-[var(--border-w)] border-[var(--border-color)] bg-[var(--surface-color)] px-4 py-3 font-black uppercase tracking-tight transition-colors hover:bg-[var(--accent-2-color)] hover:text-[var(--bg-color)]"
-                href="https://github.com/joey33o"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub Profile
-              </a>
+            </div>
+
+            <div className="mt-6 border border-[var(--border-color)] bg-[var(--bg-color)] p-4 text-sm">
+              <div className="font-black uppercase">First proof (visible early)</div>
+              <p className="mt-2 text-white/80">
+                5 eras · 8 milestones · Scroll-triggered theme system · Static export deployment
+              </p>
             </div>
           </div>
 
@@ -56,11 +70,6 @@ export default function Home() {
                 <div className="text-xs font-semibold uppercase tracking-wider">Black / Yellow</div>
               </div>
             </div>
-
-            <div className="mt-4 border border-[var(--border-color)] bg-[var(--surface-color)] p-4 text-sm">
-              <div className="font-black uppercase">First proof (visible early)</div>
-              <p className="mt-2">The proof block starts immediately below—no buried content, no template fluff.</p>
-            </div>
           </div>
         </div>
       </section>
@@ -71,7 +80,9 @@ export default function Home() {
 
       <ProjectProofBlock proof={projectProof} />
 
-      <LookingForCard email="jm2569@njit.edu" githubProfileUrl="https://github.com/joey33o" />
+      <div id="contact">
+        <LookingForCard email="jm2569@njit.edu" githubProfileUrl="https://github.com/joey33o" />
+      </div>
     </div>
   );
 }
