@@ -16,41 +16,26 @@ export function ProjectProofBlock({ proof }: ProjectProofBlockProps) {
 
         <div className="grid grid-cols-1 gap-0 lg:grid-cols-12">
           <div className="lg:col-span-7 border-b-[var(--border-w)] lg:border-b-0 lg:border-r-[var(--border-w)] border-[var(--border-color)] p-6">
-            <div className="inline-flex items-baseline gap-2 border border-[var(--border-color)] px-3 py-2 font-black uppercase">
+            <div className="inline-flex items-baseline gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
               <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
-              <span>{proof.artifactTitle}</span>
+              <span>Artifact</span>
             </div>
-            <pre className="mt-4 whitespace-pre-wrap border border-[var(--border-color)] bg-[var(--bg-color)] p-4 text-sm">
+
+            <div className="mt-3 text-sm font-black uppercase">{proof.artifactTitle}</div>
+
+            <pre className="mt-3 max-h-64 overflow-auto whitespace-pre-wrap border border-[var(--border-color)] bg-[var(--bg-color)] p-4 text-sm">
               {proof.artifactBody}
             </pre>
+
+            <p className="mt-3 text-xs text-white/70">Scroll inside the artifact box to read full details.</p>
           </div>
 
           <div className="lg:col-span-5 p-6">
-            <div className="inline-flex items-baseline gap-2 border border-[var(--border-color)] px-3 py-2 font-black uppercase">
+            <div className="inline-flex items-baseline gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
               <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
               <span>Impact</span>
             </div>
             <p className="mt-3 max-w-[var(--measure)]">{proof.impact}</p>
-
-            <div className="mt-6 inline-flex items-baseline gap-2 border border-[var(--border-color)] px-3 py-2 font-black uppercase">
-              <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
-              <span>Method Note</span>
-            </div>
-
-            <div className="mt-3 border border-[var(--border-color)] p-4">
-              <div className="poster-header inline-flex items-baseline px-2 py-1 font-black">THE CHALLENGE</div>
-              <p className="mt-2 max-w-[var(--measure)]">{proof.methodNote.challenge}</p>
-            </div>
-
-            <div className="mt-3 border border-[var(--border-color)] p-4">
-              <div className="poster-header inline-flex items-baseline px-2 py-1 font-black">THE ARCHITECTURAL CHOICE</div>
-              <p className="mt-2 max-w-[var(--measure)]">{proof.methodNote.architecturalChoice}</p>
-            </div>
-
-            <div className="mt-3 border border-[var(--border-color)] p-4">
-              <div className="poster-header inline-flex items-baseline px-2 py-1 font-black">THE AUDIT</div>
-              <p className="mt-2 whitespace-pre-wrap max-w-[var(--measure)]">{proof.methodNote.audit}</p>
-            </div>
 
             <div className="mt-6">
               <PrimaryCTA href={proof.githubUrl} />
@@ -59,6 +44,36 @@ export function ProjectProofBlock({ proof }: ProjectProofBlockProps) {
             <p className="mt-6 max-w-[var(--measure)] border-t border-[var(--border-color)] pt-4 text-sm">
               {proof.caption}
             </p>
+          </div>
+        </div>
+
+        <div className="border-t-[var(--border-w)] border-[var(--border-color)] p-6">
+          <div className="inline-flex items-baseline gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
+            <span className="h-2 w-2 bg-[var(--accent-color)]" aria-hidden="true" />
+            <span>Method Note</span>
+          </div>
+
+          <div className="mt-4 grid gap-3 md:grid-cols-3">
+            <article className="border border-[var(--border-color)] p-4">
+              <div className="poster-header inline-flex items-baseline px-2 py-1 text-xs font-black uppercase tracking-wider">
+                The Challenge
+              </div>
+              <p className="mt-3 text-sm max-w-[var(--measure)]">{proof.methodNote.challenge}</p>
+            </article>
+
+            <article className="border border-[var(--border-color)] p-4">
+              <div className="poster-header inline-flex items-baseline px-2 py-1 text-xs font-black uppercase tracking-wider">
+                Architectural Choice
+              </div>
+              <p className="mt-3 text-sm max-w-[var(--measure)]">{proof.methodNote.architecturalChoice}</p>
+            </article>
+
+            <article className="border border-[var(--border-color)] p-4">
+              <div className="poster-header inline-flex items-baseline px-2 py-1 text-xs font-black uppercase tracking-wider">
+                The Audit
+              </div>
+              <p className="mt-3 text-sm whitespace-pre-wrap max-w-[var(--measure)]">{proof.methodNote.audit}</p>
+            </article>
           </div>
         </div>
       </div>

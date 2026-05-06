@@ -1,5 +1,6 @@
 import { PrimaryCTA } from "@/src/components/PrimaryCTA";
 import { FeaturedProjectCard } from "@/src/components/FeaturedProjectCard";
+import { OperatingModelSection } from "@/src/components/OperatingModelSection";
 import { ProjectProofBlock } from "@/src/components/ProjectProofBlock";
 import { featuredProject } from "@/src/content/featuredProject";
 import { projectProof } from "@/src/content/project";
@@ -46,6 +47,8 @@ export default function Home() {
       </section>
 
       <FeaturedProjectCard project={featuredProject} />
+
+      <OperatingModelSection />
 
       <ProjectProofBlock proof={projectProof} />
     </div>
