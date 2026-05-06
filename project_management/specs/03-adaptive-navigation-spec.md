@@ -1,45 +1,61 @@
-﻿# Spec: adaptive navigation
+# 03 — Adaptive Navigation Spec
 
-## Objective
-Define the implementation objective for this scope in the Hero single-project portfolio.
+## 1. Objective
 
-## Scope
-- Include tasks directly related to this spec only.
-- Keep implementation isolated and minimal.
+Implement a sticky, high-contrast Brutalist navigation that supports keyboard use and maintains the “engineered, reliable” first impression.
 
-## Non-Goals
-- No unrelated feature work.
-- No scope expansion beyond this spec.
+## 2. Scope
 
-## Dependencies
-- Project plan approval in Project-Plan.md
-- Prior dependent sprints/specs as applicable
+- Sticky header/nav
+- High-contrast border system
+- Keyboard focus visibility
+- Links to sections and primary GitHub CTA
 
-## Implementation Tasks
-- [ ] Define implementation details
-- [ ] Execute targeted file changes
-- [ ] Perform local validation steps
+## 3. Non-Goals
 
-## Acceptance Criteria
-- [ ] Behavior and structure match the spec objective
-- [ ] No regressions introduced in adjacent areas
+- No animated nav reveals
+- No complex scroll-driven nav transformations
 
-## Verification Steps
-1. Run relevant checks in website/
-2. Review UI/behavior against this spec
-3. Confirm acceptance criteria are satisfied
+## 4. Dependencies
 
-## Deliverables
-- Updated source files and/or docs for this spec
-- Verification notes and completion evidence
+- Foundation app shell exists (Spec 01)
+- Token system exists for border and spacing
 
-## Sprint Status Board
+## 5. Implementation Tasks
+
+- [ ] Create `AdaptiveNav` component
+- [ ] Add sticky positioning and structural border
+- [ ] Add keyboard focus styles that are visible on all links/buttons
+- [ ] Ensure nav works on mobile and desktop (grid-aligned)
+
+## 6. Acceptance Criteria
+
+- Nav remains sticky at the top of the viewport
+- Nav has a clearly visible border (2–3px) and no rounded corners
+- Focus states are visible and not dependent on hover
+- Primary CTA is present and visually dominant in nav or hero flow (per design)
+
+## 7. Verification Steps
+
+1. Tab through nav and confirm focus ring/outline is visible
+2. Resize viewport and confirm nav does not overlap content
+
+## 8. Deliverables
+
+- `AdaptiveNav` component
+- Updated layout integration
+
+## 9. Sprint Status Board
+
 ### Planned
-- [ ] Scope analysis complete
-- [ ] Tasks ready for execution
+
+- [ ] Create nav skeleton and section anchors
+- [ ] Add focus visibility and accessibility checks
 
 ### Active
-- [ ] None
+
+- [ ] (none)
 
 ### Completed
-- [ ] None
+
+- [ ] (none)

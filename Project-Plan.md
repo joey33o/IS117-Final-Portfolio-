@@ -49,18 +49,7 @@ Final-Portfolio/
 ├── MyNotes.md
 ├── project_management/
 │   ├── specs/
-│   │   ├── 00-work-segmentation-spec.md
-│   │   ├── 01-foundation-and-project-setup-spec.md
-│   │   ├── 02-content-and-data-modeling-spec.md
-│   │   ├── 03-adaptive-navigation-spec.md
-│   │   ├── 04-hero-and-opening-composition-spec.md
-│   │   ├── 05-single-project-proof-framework-spec.md
-│   │   ├── 06-interaction-and-motion-behavior-spec.md
-│   │   ├── 07-accessibility-and-qa-validation-spec.md
-│   │   └── 08-deployment-and-cicd-spec.md
-│   ├── planning/
-│   ├── active/
-│   └── complete/
+│
 └── website/
     └── (all runnable app code, dependencies, and build outputs)
 ```
@@ -193,65 +182,6 @@ Each spec file must contain:
 8. Deliverables
 9. Sprint Status Board
 
-Planned spec files:
-
-- 00-work-segmentation-spec.md
-- 01-foundation-and-project-setup-spec.md
-- 02-content-and-data-modeling-spec.md
-- 03-adaptive-navigation-spec.md
-- 04-hero-and-opening-composition-spec.md
-- 05-single-project-proof-framework-spec.md
-- 06-interaction-and-motion-behavior-spec.md
-- 07-accessibility-and-qa-validation-spec.md
-- 08-deployment-and-cicd-spec.md
-
-## 13. Sprint Work Style and Rules
-
-- All not-started sprint files live in project_management/planning/
-- Only one sprint file can exist in project_management/active/ at a time
-- Completed sprint files move to project_management/complete/
-- Large tasks must be split into small, focused sprints
-- Each sprint must minimize file churn and avoid mixed concerns
-
-## 14. Sprint Backlog (Initial)
-
-- sprint-01a-init-nextjs-in-website.md
-- sprint-01b-configure-tailwind-and-postcss.md
-- sprint-01c-create-layout-and-global-tokens.md
-- sprint-01d-verify-build-and-root-restrictions.md
-- sprint-01e-apply-contrast-direction-black-yellow.md
-- sprint-02a-define-content-types.md
-- sprint-02b-create-single-project-dataset.md
-- sprint-02c-add-proof-copy-and-claims-mapping.md
-- sprint-02d-validate-proof-content-consumers.md
-- sprint-03a-build-sticky-nav-shell.md
-- sprint-03b-add-brutalist-style-state.md
-- sprint-03c-add-high-contrast-accessible-nav-state.md
-- sprint-03d-keyboard-and-focus-nav-validation.md
-- sprint-04a-hero-headline-and-lead-structure.md
-- sprint-04e-hero-readability-refinement.md
-- sprint-04b-grid-aligned-asymmetry-layout.md
-- sprint-04c-hero-top-visual-and-artifact-placement.md
-- sprint-04d-typography-measure-and-rhythm-polish.md
-- sprint-05a-proof-block-title-and-artifact.md
-- sprint-05b-impact-and-caption-clarity.md
-- sprint-05c-method-note-challenge.md
-- sprint-05d-method-note-architectural-choice.md
-- sprint-05e-method-note-human-audit-evidence.md
-- sprint-05f-github-cta-and-click-flow.md
-- sprint-06a-hero-first-viewport-verification.md
-- sprint-06b-specs-table-metrics-and-labels.md
-- sprint-06c-brutalist-border-and-grid-polish.md
-- sprint-06d-reduced-motion-fallbacks.md
-- sprint-07a-heading-and-landmark-audit.md
-- sprint-07b-focus-order-and-keyboard-flow.md
-- sprint-07c-contrast-validation-both-themes.md
-- sprint-07d-responsive-regression-checks.md
-- sprint-08a-next-config-static-export.md
-- sprint-08b-github-pages-workflow.md
-- sprint-08c-deploy-verification.md
-- sprint-08d-production-behavior-smoke-test.md
-
 ## 15. Completion Gate
 
 A sprint can move to complete only when:
@@ -259,22 +189,3 @@ A sprint can move to complete only when:
 1. All sprint acceptance criteria are checked
 2. Verification steps pass
 3. npm run build succeeds in website/
-
-## 16. Sprint Status Board
-
-### Planned
-
-- [ ] Approve this Project-Plan.md as baseline governance
-- [ ] Generate project_management/specs package files
-- [ ] Generate project_management/planning sprint files
-- [ ] Initialize website/ Next.js app
-- [ ] Implement Hero first-read and proof system
-- [ ] Run accessibility and deployment verification
-
-### Active
-
-- [ ] None
-
-### Completed
-
-- [x] Initial planning source review completed

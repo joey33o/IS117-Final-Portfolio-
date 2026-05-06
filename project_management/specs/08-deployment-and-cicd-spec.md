@@ -1,45 +1,64 @@
-﻿# Spec: deployment and cicd
+# 08 — Deployment and CI/CD Spec
 
-## Objective
-Define the implementation objective for this scope in the Hero single-project portfolio.
+## 1. Objective
 
-## Scope
-- Include tasks directly related to this spec only.
-- Keep implementation isolated and minimal.
+Enable static export and GitHub Pages deployment so the portfolio is accessible publicly with repeatable builds.
 
-## Non-Goals
-- No unrelated feature work.
-- No scope expansion beyond this spec.
+## 2. Scope
 
-## Dependencies
-- Project plan approval in Project-Plan.md
-- Prior dependent sprints/specs as applicable
+- `next.config.*` configured for static export
+- GitHub Actions workflow to build and deploy `website/` output
+- Pages pathing (basePath/assetPrefix) for project pages deployment
 
-## Implementation Tasks
-- [ ] Define implementation details
-- [ ] Execute targeted file changes
-- [ ] Perform local validation steps
+## 3. Non-Goals
 
-## Acceptance Criteria
-- [ ] Behavior and structure match the spec objective
-- [ ] No regressions introduced in adjacent areas
+- No server-side rendering requirements
+- No custom deployment platform beyond GitHub Pages
 
-## Verification Steps
-1. Run relevant checks in website/
-2. Review UI/behavior against this spec
-3. Confirm acceptance criteria are satisfied
+## 4. Dependencies
 
-## Deliverables
-- Updated source files and/or docs for this spec
-- Verification notes and completion evidence
+- Next.js project exists in `website/` (Spec 01)
+- Repo is hosted on GitHub
 
-## Sprint Status Board
+## 5. Implementation Tasks
+
+- [ ] Configure Next.js static export:
+  - [ ] `output: 'export'`
+  - [ ] `images: { unoptimized: true }`
+  - [ ] `basePath`/`assetPrefix` set for `/<repo-name>` when needed
+- [ ] Add `.github/workflows/deploy.yml` to:
+  - [ ] install with `npm ci`
+  - [ ] run `npm run build`
+  - [ ] upload `website/out/`
+  - [ ] deploy via `actions/deploy-pages`
+
+## 6. Acceptance Criteria
+
+- `npm run build` succeeds in `website/` and produces `out/`
+- Deployed site loads assets correctly on GitHub Pages
+
+## 7. Verification Steps
+
+1. Run `npm run build` in `website/` and confirm `out/` exists
+2. Confirm workflow references `website/` working directory
+3. Confirm Pages deployment uses built artifact
+
+## 8. Deliverables
+
+- `website/next.config.*` updated for static export
+- `.github/workflows/deploy.yml`
+
+## 9. Sprint Status Board
+
 ### Planned
-- [ ] Scope analysis complete
-- [ ] Tasks ready for execution
+
+- [ ] sprint-08a-next-config-static-export
+- [ ] sprint-08b-github-pages-workflow
 
 ### Active
-- [ ] None
+
+- [ ] (none)
 
 ### Completed
-- [ ] None
+
+- [ ] (none)

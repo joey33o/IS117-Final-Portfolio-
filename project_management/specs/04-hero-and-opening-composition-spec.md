@@ -1,45 +1,66 @@
-﻿# Spec: hero and opening composition
+# 04 — Hero and Opening Composition Spec
 
-## Objective
-Define the implementation objective for this scope in the Hero single-project portfolio.
+## 1. Objective
 
-## Scope
-- Include tasks directly related to this spec only.
-- Keep implementation isolated and minimal.
+Deliver a first-viewport Hero composition that instantly communicates the Hero archetype and the promise statement, with proof visible early.
 
-## Non-Goals
-- No unrelated feature work.
-- No scope expansion beyond this spec.
+## 2. Scope
 
-## Dependencies
-- Project plan approval in Project-Plan.md
-- Prior dependent sprints/specs as applicable
+- First screen hero layout
+- Promise statement in first viewport: `AI-AUGMENTED. HUMAN-AUDITED. BUILT TO SCALE.`
+- Supporting copy (2–3 sentences)
+- Primary GitHub CTA
+- Ensure first proof element appears without deep scrolling
 
-## Implementation Tasks
-- [ ] Define implementation details
-- [ ] Execute targeted file changes
-- [ ] Perform local validation steps
+## 3. Non-Goals
 
-## Acceptance Criteria
-- [ ] Behavior and structure match the spec objective
-- [ ] No regressions introduced in adjacent areas
+- No decorative motion
+- No multi-project gallery
 
-## Verification Steps
-1. Run relevant checks in website/
-2. Review UI/behavior against this spec
-3. Confirm acceptance criteria are satisfied
+## 4. Dependencies
 
-## Deliverables
-- Updated source files and/or docs for this spec
-- Verification notes and completion evidence
+- Foundation layout and tokens (Spec 01)
+- Content model for hero text/links (Spec 02)
 
-## Sprint Status Board
+## 5. Implementation Tasks
+
+- [ ] Build `Hero` component with strict grid layout
+- [ ] Add headline + promise + supporting copy
+- [ ] Add primary CTA button labeled per `Concept.md`:
+  - `AUDIT MY CODE ON GITHUB`
+- [ ] Place first proof artifact “near the promise” in reading flow
+
+## 6. Acceptance Criteria
+
+- Promise statement is visible in the first viewport on common laptop sizes
+- CTA is visible without scrolling (or within the immediate hero flow)
+- First proof element is visible without “deep scroll” (appears immediately below hero or within hero)
+- Visual language reads as Brutalist/engineered:
+  - strict grid
+  - heavy borders
+  - no rounded corners
+  - no fade-in animations
+
+## 7. Verification Steps
+
+1. Load page at 100% zoom and confirm promise + CTA are visible
+2. Scroll slightly and confirm proof element appears immediately
+
+## 8. Deliverables
+
+- `Hero` component
+- Updated home page composition to include hero + early proof
+
+## 9. Sprint Status Board
+
 ### Planned
-- [ ] Scope analysis complete
-- [ ] Tasks ready for execution
+
+- [ ] sprint-04a-hero-headline-and-lead-structure
 
 ### Active
-- [ ] None
+
+- [ ] (none)
 
 ### Completed
-- [ ] None
+
+- [ ] (none)

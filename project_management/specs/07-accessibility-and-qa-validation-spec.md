@@ -1,45 +1,66 @@
-﻿# Spec: accessibility and qa validation
+# 07 — Accessibility and QA Validation Spec
 
-## Objective
-Define the implementation objective for this scope in the Hero single-project portfolio.
+## 1. Objective
 
-## Scope
-- Include tasks directly related to this spec only.
-- Keep implementation isolated and minimal.
+Validate that the portfolio is keyboard navigable, readable, and trustworthy (focus visibility, contrast, headings, landmarks), reinforcing the “human-audited” positioning.
 
-## Non-Goals
-- No unrelated feature work.
-- No scope expansion beyond this spec.
+## 2. Scope
 
-## Dependencies
-- Project plan approval in Project-Plan.md
-- Prior dependent sprints/specs as applicable
+- Keyboard navigation and focus order
+- Visible focus styles
+- Heading hierarchy and landmarks
+- Contrast and readability checks
+- Basic responsive regression checks
 
-## Implementation Tasks
-- [ ] Define implementation details
-- [ ] Execute targeted file changes
-- [ ] Perform local validation steps
+## 3. Non-Goals
 
-## Acceptance Criteria
-- [ ] Behavior and structure match the spec objective
-- [ ] No regressions introduced in adjacent areas
+- No external audit tooling requirement (manual checks are acceptable)
+- No full automated testing suite requirement (can add later if desired)
 
-## Verification Steps
-1. Run relevant checks in website/
-2. Review UI/behavior against this spec
-3. Confirm acceptance criteria are satisfied
+## 4. Dependencies
 
-## Deliverables
-- Updated source files and/or docs for this spec
-- Verification notes and completion evidence
+- Hero + proof block components exist (Specs 04–05)
 
-## Sprint Status Board
+## 5. Implementation Tasks
+
+- [ ] Add skip link (if needed) and ensure visible on focus
+- [ ] Verify heading hierarchy (single H1, consistent H2/H3)
+- [ ] Verify focus states for links/buttons
+- [ ] Verify contrast in primary and surface areas
+- [ ] Validate reading measure and layout at common breakpoints
+
+## 6. Acceptance Criteria
+
+- Keyboard can reach all interactive elements
+- Focus indicator is always visible
+- Headings are structural and consistent
+- Text is readable with constrained measure (no full-width paragraphs on desktop)
+
+## 7. Verification Steps
+
+1. Tab through page and confirm all controls are reachable
+2. Confirm focus is visible on CTA and nav links
+3. Confirm headings and landmarks are semantically correct
+4. Resize to mobile/tablet/desktop and confirm grid discipline remains intact
+
+## 8. Deliverables
+
+- Accessibility fixes documented and implemented
+- QA checklist completed in sprint files
+
+## 9. Sprint Status Board
+
 ### Planned
-- [ ] Scope analysis complete
-- [ ] Tasks ready for execution
+
+- [ ] sprint-07a-heading-and-landmark-audit
+- [ ] sprint-07b-focus-order-and-keyboard-flow
+- [ ] sprint-07c-contrast-validation
+- [ ] sprint-07d-responsive-regression-checks
 
 ### Active
-- [ ] None
+
+- [ ] (none)
 
 ### Completed
-- [ ] None
+
+- [ ] (none)

@@ -1,45 +1,64 @@
-﻿# Spec: work segmentation
+# 00 — Work Segmentation Spec
 
-## Objective
-Define the implementation objective for this scope in the Hero single-project portfolio.
+## 1. Objective
 
-## Scope
-- Include tasks directly related to this spec only.
-- Keep implementation isolated and minimal.
+Establish lightweight execution discipline for building the Hero single-project portfolio inside `website/`.
 
-## Non-Goals
-- No unrelated feature work.
-- No scope expansion beyond this spec.
+## 2. Scope
 
-## Dependencies
-- Project plan approval in Project-Plan.md
-- Prior dependent sprints/specs as applicable
+- Define how work is split into small, verifiable phases
+- Define implementation governance:
+  - `implementation/` contains a small set of phase playbooks
+  - Each phase playbook includes the exact commands + code snippets needed to complete the specs
+- Define completion gates for moving to the next phase
 
-## Implementation Tasks
-- [ ] Define implementation details
-- [ ] Execute targeted file changes
-- [ ] Perform local validation steps
+## 3. Non-Goals
 
-## Acceptance Criteria
-- [ ] Behavior and structure match the spec objective
-- [ ] No regressions introduced in adjacent areas
+- No implementation work in this spec
+- No UI/UX decisions beyond what is already defined in `Concept.md` and `Project-Plan.md`
 
-## Verification Steps
-1. Run relevant checks in website/
-2. Review UI/behavior against this spec
-3. Confirm acceptance criteria are satisfied
+## 4. Dependencies
 
-## Deliverables
-- Updated source files and/or docs for this spec
-- Verification notes and completion evidence
+- Repository contains `Concept.md`, `MyNotes.md`, `Project-Plan.md`
+- Node.js LTS and npm available locally
 
-## Sprint Status Board
+## 5. Implementation Tasks
+
+- [ ] Create and maintain `project_management/specs/` as the spec source of truth
+- [ ] Create and maintain `implementation/` phase playbooks
+- [ ] Keep the number of phase files small to reduce churn
+- [ ] Enforce “website-only runnable code” rule
+
+## 6. Acceptance Criteria
+
+- Phases are narrow, measurable slices (one outcome per phase)
+- Each phase ends with a verification gate
+- Phase progression rule:
+  - do not start the next phase until the current phase verification steps pass
+  - `npm run build` succeeds from `website/` at the end of each phase where it’s applicable
+
+## 7. Verification Steps
+
+1. Confirm folder structure matches governance rules
+2. Confirm phase playbooks exist under `implementation/`
+3. Confirm runnable app code exists only under `website/`
+
+## 8. Deliverables
+
+- `project_management/specs/00-work-segmentation-spec.md`
+- Phase playbooks under `implementation/`
+
+## 9. Status Board
+
 ### Planned
-- [ ] Scope analysis complete
-- [ ] Tasks ready for execution
+
+- [ ] Create initial phase set (foundation → content/UI → accessibility → deployment)
+- [ ] Define verification gates in each phase file
 
 ### Active
-- [ ] None
+
+- [ ] (not used — phases tracked in `implementation/`)
 
 ### Completed
-- [ ] None
+
+- [ ] (tracked by checkboxes inside each phase file)
