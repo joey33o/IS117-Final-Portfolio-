@@ -14,6 +14,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 border-[var(--border-w)] border-[var(--border-color)] bg-[var(--surface-color)] px-4 py-3 font-black"
+        >
+          Skip to content
+        </a>
         <div className="min-h-screen">
           <header
             className="border-solid"
@@ -23,7 +29,7 @@ export default function RootLayout({
               <div className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-12">
                 <div className="col-span-4 md:col-span-6 lg:col-span-12">
                   <div className="flex items-baseline justify-between gap-4">
-                    <div className="font-semibold tracking-tight">Joseph Martinez</div>
+                    <div className="text-sm uppercase tracking-[0.22em]">Joseph Martinez</div>
                     <div className="text-sm text-right uppercase tracking-[0.22em]">
                       Newark, NJ • Seeking web design internships with systems and full stack integration
                     </div>

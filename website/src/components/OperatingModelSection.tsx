@@ -2,7 +2,13 @@ import { facultyNote, operatingCards } from "@/src/content/operatingModel";
 
 export function OperatingModelSection() {
   return (
-    <section className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-12" aria-label="Operating model and faculty note">
+    <section
+      className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-12"
+      aria-labelledby="operating-model-heading"
+    >
+      <h2 id="operating-model-heading" className="sr-only">
+        Operating model and faculty note
+      </h2>
       <div className="col-span-4 md:col-span-6 lg:col-span-8">
         <div className="pop-panel panel-surface border-[var(--border-w)] border-[var(--border-color)] p-6">
           <div className="inline-flex items-center gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
