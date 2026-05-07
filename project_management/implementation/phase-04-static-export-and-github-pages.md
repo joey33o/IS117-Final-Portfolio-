@@ -10,6 +10,13 @@ Make the portfolio deployable to GitHub Pages via static export.
 ## Non-Goals
 - No custom domain
 
+## Important (avoid the common deployment pitfall)
+GitHub Pages has two different deployment modes:
+- **GitHub Actions (recommended for this repo):** builds the Next.js static export from [website](website) and publishes [website/out](website/out).
+- **Deploy from a branch (not recommended here):** GitHub runs Jekyll against the repository root and tries to render markdown files into a site.
+
+This project is a Next.js static export, so set **Settings → Pages → Source = GitHub Actions**.
+
 ## Exact code needed
 
 ### website/next.config.ts
@@ -35,7 +42,15 @@ Notes:
 - For user/organization pages (username.github.io), leave it empty.
 
 ### .github/workflows/deploy.yml
-Create this file at repo root:
+Use the workflow file at [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+
+If you need to recreate it, the key requirements are:
+- Runs `npm ci` and `npm run build` from the `website/` folder
+- Publishes the exported output from `website/out`
+- Sets `NEXT_PUBLIC_BASE_PATH` to `/<repo-name>` for project pages (leave empty for `<owner>.github.io`)
+- Writes `website/out/.nojekyll` before uploading
+
+Reference shape (placeholders only):
 
 ```yml
 name: Deploy to GitHub Pages
@@ -75,9 +90,9 @@ jobs:
       - name: Build
         working-directory: website
         env:
-          # For project pages, Next.js needs basePath '/<repo-name>'.
-          # For user/org pages (<owner>.github.io), basePath must be empty.
-          NEXT_PUBLIC_BASE_PATH: ${{ github.event.repository.name != format('{0}.github.io', github.repository_owner) && format('/{0}', github.event.repository.name) || '' }}
+          # For project pages, set this to '/<repo-name>'.
+          # For user/org pages (<owner>.github.io), set this to '' (empty).
+          NEXT_PUBLIC_BASE_PATH: /<repo-name>
         run: npm run build
 
       - name: Disable Jekyll
@@ -94,7 +109,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
