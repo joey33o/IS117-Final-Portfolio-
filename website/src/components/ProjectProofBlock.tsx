@@ -7,6 +7,11 @@ type ProjectProofBlockProps = {
 };
 
 export function ProjectProofBlock({ proof }: ProjectProofBlockProps) {
+  const excerptLines = 18;
+  const artifactLines = proof.artifactBody.split("\n");
+  const artifactExcerpt = artifactLines.slice(0, excerptLines).join("\n");
+  const artifactHasMore = artifactLines.length > excerptLines;
+
   return (
     <section className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-12">
       <div className="col-span-4 md:col-span-6 lg:col-span-12 pop-panel panel-surface border-[var(--border-w)] border-[var(--border-color)]">
@@ -23,11 +28,23 @@ export function ProjectProofBlock({ proof }: ProjectProofBlockProps) {
 
             <div className="mt-3 text-sm font-black uppercase">{proof.artifactTitle}</div>
 
-            <pre className="mt-3 max-h-64 overflow-auto whitespace-pre-wrap border border-[var(--border-color)] bg-[var(--bg-color)] p-4 text-sm">
-              {proof.artifactBody}
+            <pre className="mt-3 whitespace-pre-wrap border border-[var(--border-color)] bg-[var(--bg-color)] p-4 text-sm">
+              {artifactExcerpt}
             </pre>
 
-            <p className="mt-3 text-xs text-white/70">Scroll inside the artifact box to read full details.</p>
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+              <p className="text-xs text-white/70">
+                {artifactHasMore ? `Showing first ${excerptLines} lines.` : "Artifact excerpt."}
+              </p>
+              <a
+                className="inline-flex items-center justify-center border border-[var(--border-color)] bg-[var(--surface-color)] px-3 py-2 text-xs font-black uppercase tracking-wider transition-colors hover:bg-[var(--accent-2-color)] hover:text-[var(--bg-color)]"
+                href={proof.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View full artifact on GitHub
+              </a>
+            </div>
           </div>
 
           <div className="lg:col-span-5 p-6">
