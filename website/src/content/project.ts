@@ -19,10 +19,11 @@ export const projectProof: ProjectProof = {
     "This is the promise in practice: I’ll use AI for speed, but I only ship what I can audit, explain, and maintain.",
   githubUrl: "https://github.com/joey33o/IS117-Museum-",
   specs: [
-    { label: "Tech stack", value: "Next.js (App Router), TypeScript, Tailwind, GSAP ScrollTrigger" },
-    { label: "Build", value: "Static prerender (GitHub Pages-friendly)" },
-    { label: "Tests", value: "Manual QA + build gate" },
-    { label: "Performance", value: "Static pages prerendered" },
-    { label: "Validation", value: "Skip link + visible focus + reduced-motion checks" },
+    { label: "01 — Foundation", value: "Next.js App Router + Tailwind tokens; poster-style layout grid" },
+    { label: "02 — Content Model", value: "Museum data shaped as eras + milestones; rendered via reusable sections" },
+    { label: "03 — Theme Transition", value: "CSS variables + `body.is-space-era` toggle; ScrollTrigger threshold" },
+    { label: "04 — Proof-First Page", value: "Hero → featured project → method note → artifact excerpt + GitHub link" },
+    { label: "05 — Accessibility + QA", value: "Skip link, focus-visible, reduced-motion checks; breakpoint review" },
+    { label: "06 — Static Deploy", value: "`output: export`, Pages workflow, basePath fixes for project pages" },
   ],
 };

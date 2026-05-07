@@ -96,7 +96,7 @@ export function ProjectProofBlock({ proof }: ProjectProofBlockProps) {
       </div>
 
       <div className="col-span-4 md:col-span-6 lg:col-span-12">
-        <SpecsTable rows={proof.specs} />
+        <SpecsTable title="Build Process" rows={proof.specs} />
       </div>
     </section>
   );

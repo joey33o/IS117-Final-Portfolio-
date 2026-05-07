@@ -2,13 +2,14 @@ import type { SpecsRow } from "@/src/content/types";
 
 type SpecsTableProps = {
   rows: SpecsRow[];
+  title?: string;
 };
 
-export function SpecsTable({ rows }: SpecsTableProps) {
+export function SpecsTable({ rows, title = "Specs Table" }: SpecsTableProps) {
   return (
     <div className="pop-panel panel-surface border-[var(--border-w)] border-[var(--border-color)]">
       <div className="poster-header border-b-[var(--border-w)] border-[var(--border-color)] px-4 py-3 font-black uppercase">
-        Specs Table
+        {title}
       </div>
       <dl className="grid grid-cols-1">
         {rows.map((row) => (
