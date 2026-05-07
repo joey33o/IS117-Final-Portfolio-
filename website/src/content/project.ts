@@ -9,11 +9,11 @@ export const projectProof: ProjectProof = {
     "Shipped a scroll-driven museum experience that transitions themes reliably, stays accessible (reduced-motion + keyboard), and can be deployed as a static export on GitHub Pages.",
   methodNote: {
     challenge:
-      "The risk: a portfolio that looks AI-generated and untrustworthy. The constraint: motion + static export + content structure must hold up under real deployment rules (GitHub Pages) and accessibility expectations.",
+      "Translate a museum curation concept (eras + milestones) into a clear reading order that survives responsive layouts, without letting motion override readability.",
     architecturalChoice:
-      "Use a token-driven UI and a typed content model, keep the transition logic explicit (CSS variables + body class), and design the layout so the proof is visible early (not buried).",
+      "Model the content as eras and milestones and render it through reusable components; keep motion minimal and subordinate to hierarchy (headings, measure, spacing tokens). The theme change is a system toggle, not scattered one-off styling.",
     audit:
-      "Manual audit record:\n- Verified: `npm run build` passes (static prerender).\n- Verified: keyboard flow (visible focus + skip link).\n- Verified: reduced-motion behavior (no required animation to read/understand).\n- Fix: removed the ‘scroll inside artifact box’ pattern in favor of an excerpt + GitHub link.",
+      "Manual audit record:\n- Reviewed breakpoints to confirm grid alignment and controlled paragraph measure.\n- Confirmed focus visibility and keyboard navigation flow across sections.\n- Verified reduced-motion behavior so the story remains readable without animation.\n- Replaced the inner-scroll artifact box with an excerpt + GitHub link for clarity.",
   },
   caption:
     "This is the promise in practice: I’ll use AI for speed, but I only ship what I can audit, explain, and maintain.",
