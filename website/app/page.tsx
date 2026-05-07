@@ -60,7 +60,7 @@ export default function Home() {
             <div className="allow-radius border-[var(--border-w)] border-[var(--border-color)] bg-[var(--surface-color)] overflow-hidden">
               <div className="relative aspect-[4/5]">
                 <img
-                  src="/hero-poster.svg"
+                  src="hero-poster.svg"
                   alt="Abstract black-and-yellow poster composition"
                   className="h-full w-full object-cover"
                 />

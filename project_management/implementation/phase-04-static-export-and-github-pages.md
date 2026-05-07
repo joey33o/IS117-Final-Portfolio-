@@ -120,6 +120,9 @@ Local:
 - From `website/`: `npm run build`
 - Confirm `website/out/` exists
 
+Deployment note:
+- For project pages, avoid root-absolute asset URLs like `src="/hero-poster.svg"` because they resolve to `https://<user>.github.io/...` (missing `/<repo>/`). Prefer relative URLs (`src="hero-poster.svg"`) or prefix with your base path.
+
 GitHub:
 - Push to `main`
 - Confirm Actions workflow succeeds
