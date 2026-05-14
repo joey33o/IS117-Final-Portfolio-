@@ -1,0 +1,602 @@
+
+Search
+
+Get app
+Write
+Sign up
+
+Sign in
+
+
+Unknown user
+The AI-Powered Product Engineer: A New Engineering Archetype
+Rich Archbold
+Rich Archbold
+
+Follow
+5 min read
+·
+Jan 21, 2026
+11
+
+
+1
+
+
+
+Press enter or click to view image in full size
+
+Technology advances by raising the level of abstraction at which we can work. Each shift removes certain kinds of effort, introduces new ones, reshapes how work is specialized, and enables teams to deliver better value faster.
+
+The move from hardware to cloud was one such shift. AI is another. It changes the unit of specialization from frontend and backend engineering to working above or below an AI-powered development environment.
+
+Above the abstraction, engineers move faster and take on more responsibility for shaping and delivering product outcomes. Below it, a smaller group builds the platforms, tooling, and infrastructure that make this speed reliable and scalable.
+
+Organizations that fail to adapt their roles, hiring, and incentives to this new abstraction will not convert AI into speed. They will produce more output without meaningfully improving outcomes.
+
+Abstraction shifts and specialization
+Every major abstraction shift in software engineering introduces new specializations.
+
+Some kinds of work shrink or disappear.
+New kinds of work emerge.
+Roles reorganize around the new abstraction layer.
+The job doesn’t get easier — it evolves.
+The overall level of difficulty remains high.
+The nature of the difficulty changes.
+Different problems require different judgment.
+As the job evolves, so do the skills that matter.
+
+Previously differentiating skills become baseline.
+New skills move to the foreground.
+Over time, new engineering archetypes form.
+A brief history of abstraction
+Early software era: low-level control dominated
+Engineers wrote software close to the hardware.
+Manual memory management, pointers, and explicit resource handling were core skills.
+Much of the work focused on avoiding crashes, corruption, and undefined behavior.
+Scale required deep understanding of how software mapped to hardware.
+Higher-level languages: memory and runtime abstracted
+Managed runtimes introduced a new abstraction.
+Memory management and execution models moved into the runtime.
+Most application engineers worked faster at a higher level of abstraction.
+The work didn’t disappear — it specialized.
+Compiler, runtime, and VM engineers emerged, with a higher bar for correctness and performance.
+Software engineering didn’t get easier. It evolved.
+
+Pre-cloud era: execution and operations dominated
+Engineers selected hardware, racked servers, tuned operating systems, and deployed software.
+Scale required deep operational competence.
+Teams were execution-constrained.
+Engineers were far from customers and business outcomes.
+Cloud era: infrastructure abstracted, product velocity increased
+A small group built the cloud substrate; most engineers consumed it.
+Infrastructure complexity didn’t disappear — it relocated.
+Difficulty shifted to distributed systems, reliability, and scaling products.
+Engineers moved faster and closer to customers.
+Hiring and team structure specialized by stack layer: frontend, backend, infrastructure.
+AI era: a new abstraction layer
+AI introduces a new development substrate: tooling, context systems, evals, guardrails, and workflows.
+
+The cost of writing and modifying code collapses.
+Execution capacity stops being the primary constraint.
+Choosing, shaping, and sequencing the right work becomes the constraint.
+The job doesn’t get easier. The difficulty now diverges by abstraction layer.
+
+Two new paths
+Above the AI abstraction: Product Engineers
+Some traditional scale concerns are de-emphasized:
+
+boilerplate mastery,
+narrow language specialization,
+manual optimization.
+The bar rises sharply on:
+
+product taste and intuition,
+problem framing and scope control,
+UX and tradeoff judgment,
+deciding what not to build,
+owning outcomes end-to-end.
+Leverage comes from decision quality, not raw throughput.
+Engineers become partial PM/UX hybrids by necessity, not by title.
+
+Below the AI abstraction: AI Platform and Infrastructure Engineers
+The bar for classic engineering excellence goes up:
+
+scalability,
+reliability,
+performance,
+security,
+correctness in probabilistic systems.
+Their work must scale across teams and products.
+Developer ergonomics and system guarantees matter more than direct end-user empathy.
+Their leverage comes from multiplying others.
+
+From stack layers to abstraction layers
+Specialization no longer maps cleanly to frontend and backend boundaries.
+
+Get Rich Archbold’s stories in your inbox
+Join Medium for free to get updates from this writer.
+
+Enter your email
+Subscribe
+
+Remember me for faster sign in
+
+What matters is where an engineer creates leverage relative to the AI abstraction.
+
+How product team shape evolves
+Before (execution-constrained teams):
+
+1 PM
+1 designer
+2 frontend engineers
+3 backend engineers
+The bottleneck was execution capacity.
+
+Emerging (judgment-constrained teams):
+
+1 PM
+1 designer
+2–3 full-stack product engineers
+PMs and designers operate at a higher altitude:
+
+strategy,
+sequencing,
+quality bars,
+product coherence.
+Product engineers flesh out solutions, resolve ambiguity, and deliver end-to-end outcomes.
+Accountability shifts from shipping features to creating impact.
+
+Supply and demand constraints
+On the supply side, AI removes execution as the primary constraint.
+On the demand side, user comprehension remains fixed.
+
+Users have limited attention, time, and appetite for change.
+They can deeply understand and adopt only a small number of things at once.
+
+As this gap widens:
+
+usability and UX become throughput constraints,
+sequencing matters more than volume,
+restraint becomes a core product skill,
+brand becomes a scaling mechanism for trust and adoption.
+Shipping faster only creates advantage if users can understand, trust, and absorb what is shipped.
+
+Day-to-day ownership changes
+Engineers no longer wait for fully baked specs.
+Problem framing and solution shape are shared responsibilities.
+Engineers are accountable for whether what they build gets used and delivers value.
+PM and design input remains continuous, but no longer serial or blocking.
+Implications for hiring
+Move from hiring by stack layer to hiring by abstraction layer.
+
+Hire for:
+
+Product Engineers (above the abstraction)
+screen for product sense, agency, judgment, and AI fluency — not just technical depth.
+AI Platform / Substrate Engineers (building it)
+Infrastructure Engineers (operating at scale)
+Implications for skills development
+Product sense becomes a baseline engineering skill.
+Engineers learn customer context, experimentation, and tradeoff reasoning.
+AI becomes part of the stack: prompting, eval literacy, failure modes.
+Growth paths reward scope ownership over narrow mastery.
+Implications for incentives and performance calibration
+The core shift is from output to impact.
+
+From:
+
+“How much did you build?”
+PRs, tickets, features shipped
+To:
+
+“What impact did what you built actually have?”
+usage, adoption, customer value, business outcomes
+Product Engineers are evaluated on:
+
+problem selection,
+solution shaping,
+speed from idea to learning,
+impact relative to scope and risk.
+Product engineers are calibrated primarily on outcomes and learning velocity.
+Platform and infra engineers are calibrated on reliability and leverage created for others, tied to downstream impact.
+
+Leaders must tolerate variance.
+High-agency engineers will sometimes be wrong — but they learn faster.
+
+What doesn’t change
+PMs and designers remain essential.
+Platform and infrastructure work remains difficult and high-skill.
+Technical rigor still matters.
+The risk for incumbents
+AI inflates activity without increasing impact.
+Old role definitions create new bottlenecks.
+Engineers retreat into safe, low-leverage work.
+Top product engineers outgrow the system or leave.
+The opportunity
+Companies that move fastest to adjust roles, hiring, incentives, and calibration will turn AI-driven speed into real growth.
+Those that only add tools will add activity, not impact.
+
+Product Management
+Software Development
+AI
+Software Engineering
+Product Engineering
+11
+
+
+1
+
+
+Rich Archbold
+Written by Rich Archbold
+360 followers
+·
+269 following
+SVP of Business Systems, IT & Security @ Hubspot (ex Intercom, Facebook, Amazon)
+
+
+Follow
+Help
+
+Status
+
+About
+
+Careers
+
+Press
+
+Blog
+
+Privacy
+
+Rules
+
+Terms
+
+Text to speech
+
+https://medium.com/@rich_archbold/the-ai-powered-product-engineer-a-new-engineering-archetype-3119ed9716e4
+
+
+Indeed for employers – Home
+Resources
+Using Indeed
+Recruiting & Hiring
+Workforce Management
+Managing your Business
+Job Descriptions
+
+More
+
+
+AI Engineer Job Description: Top Duties and Qualifications
+Edited by Indeed Employer Content Team
+Last updated April 16, 2026
+On this page
+AI Engineer duties and responsibilities 
+What does an AI Engineer do? 
+AI Engineer skills and qualifications 
+AI Engineer experience requirements 
+See more
+Our mission
+Indeed’s Employer Guide helps businesses grow and manage their workforce. With over 15,000 articles in 6 languages, we offer tactical advice, how-tos and best practices to help businesses hire and retain great employees.
+
+Read our editorial guidelines
+4 min read
+An AI Engineer, or AI Developer, develops and trains artificial intelligence tools to help automate processes for businesses. Their duties include designing and programming artificial intelligence systems, testing the machine learning tools they develop and resolving issues with the algorithms and data to ensure the system works correctly.
+
+Related Content
+Related Job Titles
+Computer Engineer
+Data Engineer
+Network Engineer
+Software Engineer
+Systems Engineer
+AI Engineer: Hiring Fast Facts
+Indeed (US) - April 2026
+Job Seekers
+
+121,258
++18,151
+ since March 2026
+Average Salary
+
+$152,897 / year
+Low $41,000
+Average $152,897
+High $336,000
+Resumes
+
+4,613
++392
+ since March 2026
+Want trends specific to your market?
+Enter a Zip Code...
+AI Engineer duties and responsibilities
+Your AI Engineer job description should include the specific duties and responsibilities of the role. The specific job duties might vary, but some common options include:
+
+Evaluating machine learning processes
+Collecting and analyzing large amounts of data
+Programming AI software to utilize large amounts of data
+Developing and deploying AI algorithms
+Collaborating with other team members to establish goals for AI processes
+Evaluating the effectiveness of AI
+Managing data and project infrastructure
+Staying up to date on the latest AI developments
+Hire your next Ai Engineer today
+
+Hire your next Ai Engineer today
+
+AI Engineer Job Description Examples
+Example 1
+Requirment
+At least 3 years of experience putting Machine Learning models into production.
+MLOps tools: Experience using Mlflow or similar tools for lifecycle management of machine learning models.
+Docker: Experience in using Docker to create reproducible and scalable environments.
+Machine Learning Models: Advanced knowledge in Machine Learning models and Large Language Models (LLM), using langchain or a similar tool.
+LLM Implementation: Experience in implementing LLMs using vector bases and Retrieval-Augmented Generation (RAG), as well as tuning models. Using GPTs, Llama, or any other LLM
+Solution Architecture Validation: Ability to perform solution architecture validations for LLMs. GenAIOps: Experience in putting Generative AI (GENAI) models into production and providing support to them.
+Experience with Cloud Computing: Familiarity with cloud computing platforms such as AWS, Google Cloud, or Azure for model deployment and scaling.
+Software Engineering Skills: The ability to write clean, efficient, and reusable code is essential in MLOps roles.
+Experience with APIs: Experience in developing and using APIs can be useful for integrating models into existing applications.
+
+Job Types: Full-time, Contract
+
+Pay: $42.24 - $70.00 per hour
+
+Benefits:
+401(k)
+Dental insurance
+Health insurance
+Experience level:
+10 years
+11+ years
+8 years
+9 years
+Schedule:
+8 hour Location: Remote
+
+Show more
+Example 2
+Senior Conversational AI Engineer
+
+Remote
+
+Contract
+
+Job Description:
+
+We're looking for a highly skilled Senior Conversational AI Engineer who excels at designing and implementing chat systems using the [website] platform. Our ideal candidate is well-versed in [website] code and has a robust understanding of other Conversational AI platforms like Bot Framework, PVA, and Cognigy. This role is instrumental in revolutionizing our customer interactions through top-tier AI technology.
+
+Responsibilities:
+
+1. Architect, develop, test, and enhance chatbots using the [website] platform.
+
+2. Implement advanced natural language processing systems.
+
+3. Develop high-quality, scalable chat solutions using [website] or/and Python.
+
+4. Work closely with various teams to define, create, and integrate new features.
+
+5. Drive application design and development processes from start to finish.
+
+6. Analyze and improve existing systems, bearing in mind budget constraints and technical complexity.
+
+7. Utilize cloud computing for efficient bot deployment to a worldwide clientele.
+
+8. Stay updated with latest trends and advancements within AI and chatbot technologies.
+
+Requirements:
+
+1. A Masters/Bachelors degree in Computer Science (or equivalent).
+
+2. A minimum of 10 years of hands-on experience in software development.
+
+3. Expertise in the [website] chatbot platform.
+
+4. Proven experience in [website], with a good understanding of other programming languages (i.e: Python).
+
+5. Firm grasp on cloud-based application deployment.
+
+6. Deep knowledge of AI, machine learning, natural language processing and associated technologies.
+
+7. Extensive experience with other Conversational AI platforms like Bot Framework, PVA, Cognigy are an added advantage.
+
+8. Exceptional problem solving, critical thinking, and communication skills.
+
+9. Excellent organization skills with the ability to manage multiple projects simultaneously.
+
+10. Ability to adjust and thrive in a fast-paced environment with changing priorities.
+
+Job Types: Full-time, Contract
+
+Pay: $100.00 - $110.00 per hour
+
+Expected hours: 45 per week
+
+Benefits:
+401(k)
+Dental insurance
+Health insurance
+Experience level:
+10 years
+11+ years
+
+
+
+Experience:
+[website] chatbot platform: 5 years (Required)
+Python: 5 years Location: Remote
+
+Show more
+Generate your Ai Engineer job description in seconds
+AI-made, yours to edit
+Start for Free
+Smart tips when you post
+On this page
+AI Engineer duties and responsibilities 
+What does an AI Engineer do? 
+AI Engineer skills and qualifications 
+AI Engineer experience requirements 
+See more
+Our mission
+Indeed’s Employer Guide helps businesses grow and manage their workforce. With over 15,000 articles in 6 languages, we offer tactical advice, how-tos and best practices to help businesses hire and retain great employees.
+
+Read our editorial guidelines
+What does an AI Engineer do?
+AI Engineers develop a wide range of artificial intelligence tools that help automate processes. They train computers to think and work more like humans to offer automation solutions. Examples of AI tools include chatbots, translation tools, predictive text and virtual assistants.
+
+Engineers follow the project through all stages of development, starting with conceptualizing the AI tools the business needs. This step involves collaboration with other teams to get a well-rounded idea of what they need to include in the design. AI Engineers design, test and deploy the AI tools to help ease pain points within the workflow. The job involves analyzing and organizing massive amounts of data, programming the software, troubleshooting any issues and putting the tools out to the team for use.
+
+AI Engineer skills and qualifications
+To be successful, an AI Engineer candidate should demonstrate specific skills and qualifications. Consider adding these AI Engineer requirements to your job description:
+
+
+Copy this section
+Solid understanding of data science
+Proficiency in coding languages and software programming
+Strong analytical and problem-solving skills
+Teamwork, communication and collaboration skills
+Aptitude for math and statistics
+Self-motivation
+Deep understanding of how artificial intelligence works
+Attention to detail and concentration
+AI Engineer experience requirements
+AI Engineer requirements for experience often vary depending on the specific position. If you’re adding a new Engineer to a large team, you may only expect a few months or a year of experience. Many AI Engineers gain experience through internships. If you only have one AI Engineer, you might prefer something with two or more years of experience. Another experience requirement you might include in your AI Engineer job description is working with a specific programming language or type of AI tool.
+
+AI Engineer education and training requirements
+When companies hire AI Engineers, they typically look for a minimum of a bachelor’s degree in a related field, such as computer science, mathematics, statistics or data science. Some companies require or prefer a master’s degree in a similar field. While not typically required, certifications in the AI field give candidates additional skills and knowledge, so you might include them in your job description as preferred qualifications. For instance, the Artificial Intelligence Board of America offers the Artificial Intelligence Engineer certification program and the United States Artificial Intelligence Institute offers a Certified Artificial Intelligence Scientist (CAIS) credential.
+
+AI Engineer salary expectations
+Common salary: $152,897 yearly
+Typical salaries range from $41,000 - $336,000 yearly
+Find more information on Indeed Salaries
+*Indeed data – April 2026
+
+Job description samples for similar positions
+The AI Engineer job description might not be the best option for all companies. The following job description samples offer similar options:
+
+
+Copy this section
+Machine Learning Engineer
+Software Engineer
+Integration Engineer﻿
+Robotics Engineer﻿
+*Indeed provides this information as a courtesy to users of this site. Please note that we are not your recruiting or legal advisor, we are not responsible for the content of your job descriptions, and none of the information provided herein guarantees performance.
+Home  How to Write a Job Description  AI Engineer
+Job Description Best Practices
+Optimize your new and existing job descriptions to reach more candidates
+AI Engineer job description FAQs
+
+What is the difference between an AI Engineer and a Software Engineer?
+
+
+Do the duties of an AI Engineer vary in different industries?
+
+
+What should you look for in an AI Engineer resume?
+
+
+What traits make a good AI Engineer?
+Natural curiosity and critical thinking benefit an AI Engineer in the developing field. It also helps to be innovative because AI is a newer technology. Successful candidates are comfortable with numbers, statistics and algorithms. They’re also able to communicate their ideas and thought processes clearly with the rest of the team. Strong leadership skills can come in handy when you need an AI Engineer to take charge of the project.
+
+Three individuals are sitting at a table with a laptop, a disposable coffee cup, notebooks, and a phone visible. Two are facing each other, while the third’s back is to the camera. The setting appears to be a bright room with large windows.
+Hire your next AI Engineer today.
+Job Description Examples
+Need help writing a job description for a specific role? Use these job description examples to create your next great job posting. Or if you’re ready to hire, post your job on Indeed.
+
+Search for Titles...
+Search for Titles...
+Academic Advisor
+Account Clerk
+Account Coordinator
+Account Director
+Account Executive
+Account Manager
+Account Officer
+Account Representative
+Accountant
+Accounting Assistant
+Accounting Clerk
+Accounting Intern
+Accounting Manager
+Accounting Specialist
+Accounts Assistant
+Accounts Payable Clerk
+Accounts Payable Specialist
+Accounts Receivable Specialist
+Activity Assistant
+Activity Director
+Actor
+Actuary
+Acute Care Nurse
+Adjunct Professor
+Administrative Assistant
+Administrative Clerk
+Administrative Director
+Administrative Manager
+Administrative Officer
+Administrator
+Admissions Coordinator
+Adoption Specialist
+Advertising Manager
+Aerospace Engineer
+Aesthetic Nurse
+Agronomist
+AI Engineer
+Air Traffic Controller
+Aircraft Mechanic
+American Sign Language Interpreter
+Previous page
+1
+2
+28
+Next page
+Related articles
+
+20 Interview Questions to Ask Candidates
+Read article
+
+How To Hire Employees: A Step-by-Step Guide
+Read article
+
+Roles and Responsibilities Template (With 3 Samples)
+Read article
+We're here to help
+Visit our Help Center for answers to common questions or contact us directly.
+
+Indeed
+About Indeed
+Press
+Security
+Terms
+Privacy Center and Ad Choices
+Accessibility at Indeed
+Work at Indeed
+Countries
+Sitemap
+Employers
+Post a job
+Find candidates
+Products
+Pricing
+Indeed Insights
+Public Sector
+ATS Integrations
+FAQ
+Resources
+Employer guide
+How to hire employees
+How to write job descriptions
+Guide to hiring with Indeed
+Interview questions guide
+Hiring Lab
+Indeed Events
+Product updates
+GDPR compliant badgeISO 9001 certified badgeISO 27001 certified badge
+© 2026 • Indeed
+Your privacy choices
+
+https://www.indeed.com/hire/job-description/ai-engineer
