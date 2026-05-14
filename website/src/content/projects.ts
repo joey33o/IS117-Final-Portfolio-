@@ -8,7 +8,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "A scroll-driven museum experience that shifts from a terrestrial visual system to a celestial one using CSS variables, GSAP ScrollTrigger, and static export deployment.",
     role: "Front-end systems, accessibility, deployment",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP ScrollTrigger", "GitHub Pages"],
-    status: "Built and deployed class project",
+    status: "Deployed academic project",
     proofAngle:
       "Proves responsive front-end craft, content modeling, motion restraint, and follow-through from concept to deployable artifact.",
     problem:
@@ -49,7 +49,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "A prototype dashboard that turns unstructured support messages into categorized, prioritized review queues with editable draft replies.",
     role: "AI workflow, automation, human review",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Mock AI classifier", "Local sample data"],
-    status: "Portfolio concept prototype",
+    status: "Portfolio prototype",
     proofAngle:
       "Proves product judgment around AI: automation helps with sorting and drafting, but humans approve the final action.",
     problem:
@@ -88,7 +88,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "A responsive concept storefront for a small coffee brand with product discovery, roast filtering, subscription prompts, and trust-building purchase content.",
     role: "Business website, e-commerce UX, conversion copy",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Local product data", "Static export"],
-    status: "Portfolio concept storefront",
+    status: "Portfolio storefront concept",
     proofAngle:
       "Proves business-facing web design: product comparison, clear calls to action, buyer trust, and mobile-first shopping flow.",
     problem:

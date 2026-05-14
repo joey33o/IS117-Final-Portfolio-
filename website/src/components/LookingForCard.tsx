@@ -17,13 +17,13 @@ export function LookingForCard({ email, githubProfileUrl }: LookingForCardProps)
           </div>
 
           <h2 className="mt-6 text-4xl font-black leading-[0.95] tracking-tight md:text-5xl lg:text-6xl">
-            Teams looking for a junior product-minded developer who can use AI responsibly, build maintainable
-            front-end systems, document decisions, and validate work before release.
+            I am looking for front-end, product engineering, or AI workflow internships where careful
+            implementation, clear documentation, and maintainable UI matter.
           </h2>
 
           <p className="mt-6 max-w-[var(--measure)] text-sm text-white/80">
-            I am especially interested in front-end, product engineering, and AI workflow internships where
-            careful implementation and clear communication matter.
+            I bring a responsible AI workflow: use the tools for speed, review the result carefully, and leave
+            the system easier to understand.
           </p>
         </div>
 

@@ -12,13 +12,13 @@ export default function Home() {
           <div className="col-span-4 md:col-span-6 lg:col-span-8">
             <div className="inline-flex items-center gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
               <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
-              <span>AI-Augmented Product Engineer - Front-End / Full-Stack Systems</span>
+              <span>Front-End Developer - AI-Augmented Product Systems</span>
             </div>
 
             <h1 className="mt-5 text-5xl font-black leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
-              AI-AUGMENTED. HUMAN-AUDITED.
+              RESPONSIBLE AI WORKFLOWS.
               <br />
-              BUILT TO SCALE.
+              MAINTAINABLE FRONT-END SYSTEMS.
             </h1>
 
             <p className="mt-6 max-w-[var(--measure)]">
@@ -26,10 +26,12 @@ export default function Home() {
               accessible UI, deployment checks, and documented decisions.
             </p>
             <p className="mt-2 max-w-[var(--measure)]">
-              This portfolio is organized as proof: project need -&gt; artifact -&gt; AI workflow -&gt; human
-              audit -&gt; impact.
+              Each project shows the need, the implementation artifact, how AI supported the work, how I reviewed
+              it, and what the result is meant to prove.
             </p>
-            <p className="mt-2 max-w-[var(--measure)]">If I cannot explain it, it does not ship.</p>
+            <p className="mt-2 max-w-[var(--measure)]">
+              My goal is to turn fast AI-assisted drafts into clear, reviewed, maintainable software.
+            </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
               <span className="inline-flex items-center border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
@@ -56,9 +58,9 @@ export default function Home() {
             </div>
 
             <div className="mt-6 border border-[var(--border-color)] bg-[var(--bg-color)] p-4 text-sm">
-              <div className="font-black uppercase">Proof areas</div>
+              <div className="font-black uppercase">Project focus</div>
               <p className="mt-2 text-white/80">
-                Museum system - AI support triage - Grounded Coffee Co. storefront
+                Front-end systems, AI-assisted workflow design, and business website UX.
               </p>
             </div>
           </div>

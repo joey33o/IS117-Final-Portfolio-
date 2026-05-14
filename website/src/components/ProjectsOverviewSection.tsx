@@ -15,15 +15,15 @@ export function ProjectsOverviewSection({ projects }: ProjectsOverviewSectionPro
         <div className="col-span-4 md:col-span-6 lg:col-span-8">
           <div className="inline-flex items-center gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
             <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
-            <span>Selected Proof</span>
+            <span>Selected Projects</span>
           </div>
 
           <h2 id="projects-overview-heading" className="mt-5 text-3xl font-black tracking-tight md:text-4xl">
-            Three projects, three kinds of employer value.
+            A focused set of projects across front-end systems, AI workflows, and business UX.
           </h2>
           <p className="mt-4 max-w-[var(--measure)] text-white/80">
-            Each case study uses the same audit structure: project need, artifact, AI workflow, human
-            validation, and impact.
+            Each case study shows the project need, implementation artifact, AI-assisted workflow, review process,
+            and intended impact.
           </p>
         </div>
       </div>
