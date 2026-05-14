@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hero Portfolio",
-  description: "AI-AUGMENTED. HUMAN-AUDITED. BUILT TO SCALE.",
+  title: "Joseph Martinez - AI-Augmented Product Engineer",
+  description:
+    "Front-end and product systems portfolio focused on responsible AI workflows, maintainable UI, and human-audited shipping.",
 };
 
 export default function RootLayout({
@@ -30,8 +31,8 @@ export default function RootLayout({
                 <div className="col-span-4 md:col-span-6 lg:col-span-12">
                   <div className="flex items-baseline justify-between gap-4">
                     <div className="text-sm uppercase tracking-[0.22em]">Joseph Martinez</div>
-                    <div className="text-sm text-right uppercase tracking-[0.22em]">
-                      Newark, NJ • Seeking web design internships with systems and full stack integration
+                    <div className="text-right text-sm uppercase tracking-[0.22em]">
+                      Newark, NJ - Seeking front-end, product engineering, and AI workflow internships
                     </div>
                   </div>
                 </div>
