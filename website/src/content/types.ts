@@ -10,6 +10,12 @@ export type ProjectArtifact = {
   ctaUrl?: string;
 };
 
+export type ProjectImage = {
+  src: string;
+  alt: string;
+  caption: string;
+};
+
 export type PortfolioProject = {
   id: string;
   title: string;
@@ -25,6 +31,7 @@ export type PortfolioProject = {
   humanAudit: string[];
   impact: string;
   artifact: ProjectArtifact;
+  images: ProjectImage[];
 };
 
 export type MethodNote = {

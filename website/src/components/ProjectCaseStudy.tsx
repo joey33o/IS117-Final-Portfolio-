@@ -23,7 +23,45 @@ function DetailList({ title, items }: { title: string; items: string[] }) {
   );
 }
 
+function ProjectImageGallery({ project }: { project: PortfolioProject }) {
+  if (project.images.length === 0) {
+    return null;
+  }
+
+  return (
+    <div>
+      <div className="inline-flex items-baseline gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
+        <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
+        <span>Visual Evidence</span>
+      </div>
+
+      <div className={`mt-4 grid gap-4 ${project.images.length > 1 ? "md:grid-cols-2" : ""}`}>
+        {project.images.map((image) => (
+          <figure
+            key={image.src}
+            className="border border-[var(--border-color)] bg-[var(--bg-color)]"
+          >
+            <div className="aspect-video border-b border-[var(--border-color)] bg-black">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="h-full w-full object-contain"
+                loading="lazy"
+              />
+            </div>
+            <figcaption className="p-3 text-xs font-semibold uppercase tracking-wider text-white/75">
+              {image.caption}
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
+  const showImagesInRightColumn = project.id === "celestial-eye";
+
   return (
     <section
       id={project.id}
@@ -59,8 +97,20 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
               <dd className="mt-1 text-white/80">{project.userNeed}</dd>
             </div>
           </dl>
+
+          {showImagesInRightColumn ? (
+            <div className="mt-6 border-t border-[var(--border-color)] pt-4">
+              <ProjectImageGallery project={project} />
+            </div>
+          ) : null}
         </div>
       </div>
+
+      {!showImagesInRightColumn ? (
+        <div className="border-t-[var(--border-w)] border-[var(--border-color)] p-6">
+          <ProjectImageGallery project={project} />
+        </div>
+      ) : null}
 
       <div className="border-t-[var(--border-w)] border-[var(--border-color)] p-6">
         <div className="grid gap-3 md:grid-cols-3">

@@ -41,6 +41,13 @@ export const portfolioProjects: PortfolioProject[] = [
       ctaLabel: "View museum repo",
       ctaUrl: "https://github.com/joey33o/IS117-Museum-",
     },
+    images: [
+      {
+        src: "celestial-eye-museum-screenshot.png",
+        alt: "Screenshot of The Celestial Eye museum website interface.",
+        caption: "Live project screenshot from The Celestial Eye museum experience.",
+      },
+    ],
   },
   {
     id: "support-triage",
@@ -80,6 +87,18 @@ export const portfolioProjects: PortfolioProject[] = [
       body:
         "type TicketSuggestion = {\n  id: string;\n  message: string;\n  category: 'billing' | 'technical' | 'account' | 'general';\n  urgency: 'low' | 'medium' | 'high';\n  confidence: number;\n  summary: string;\n  suggestedReply: string;\n  reviewStatus: 'pending' | 'approved' | 'edited' | 'rejected';\n};",
     },
+    images: [
+      {
+        src: "ai-support-triage-dashboard.png",
+        alt: "Concept dashboard mockup showing support tickets, urgency labels, confidence scores, and review actions.",
+        caption: "Concept interface mockup for AI support triage workflow.",
+      },
+      {
+        src: "ai-support-triage-ticket-review.png",
+        alt: "Expanded ticket review concept with AI summary, editable draft reply, confidence warning, and human review controls.",
+        caption: "Expanded ticket review concept showing human-in-the-loop AI validation.",
+      },
+    ],
   },
   {
     id: "grounded-coffee",
@@ -119,5 +138,17 @@ export const portfolioProjects: PortfolioProject[] = [
       body:
         "type CoffeeProduct = {\n  id: string;\n  name: string;\n  roast: 'light' | 'medium' | 'dark';\n  flavorNotes: string[];\n  format: 'whole bean' | 'ground' | 'pods';\n  price: number;\n  subscriptionEligible: boolean;\n  inventoryState: 'in-stock' | 'low-stock' | 'sold-out';\n};",
     },
+    images: [
+      {
+        src: "grounded-coffee-storefront.png",
+        alt: "Concept storefront mockup for Grounded Coffee Co. showing coffee products, filters, and subscription call to action.",
+        caption: "Concept storefront mockup for Grounded Coffee Co.",
+      },
+      {
+        src: "grounded-coffee-product-cart.png",
+        alt: "Product detail and cart summary concept for Grounded Coffee Co. with roast notes, purchase options, and subtotal.",
+        caption: "Product detail and cart-state concept for Grounded Coffee Co.",
+      },
+    ],
   },
 ];
