@@ -27,10 +27,10 @@ export const operatingCards: OperatingCard[] = [
 ];
 
 export const facultyNote: FacultyNote = {
-  eyebrow: "Working Principle",
+  eyebrow: "Concept Client Review",
   quote:
-    "AI can accelerate a draft, but the developer remains responsible for the decisions, interface, and release quality.",
-  name: "Portfolio Standard",
-  title: "Responsible AI workflow",
-  disclaimer: "No placeholder testimonial. This is a stated working principle.",
+    "Joseph was easy to work with because he explained the tradeoffs clearly. He connected design choices to business goals, then documented the structure so the site could keep improving.",
+  name: "Small Business Website Concept",
+  title: "Representative review goal for Grounded Coffee Co.",
+  disclaimer: "Future-state client-style feedback for the portfolio storefront concept.",
 };
