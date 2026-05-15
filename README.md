@@ -3,6 +3,14 @@ https://joey33o.github.io/IS117-Final-Portfolio-/
 
 Notes on the Site 
 
+   Used Next.js
+
+   
+Research Have some websites for AI to anaylze 
+      I researched AI-forward engineering roles and found that employers value product judgment, responsible use of AI, testing, documentation, and business             impact. I planned the site around three project proofs: a deployed museum project, an AI support dashboard concept, and a business/e-commerce storefront           concept
+
+
+
 Concept 
       Audience
           Employer looking to invest in a promising developer capable of creating software with new technologies  
