@@ -17,16 +17,17 @@ export function LookingForCard({ email, githubProfileUrl }: LookingForCardProps)
           </div>
 
           <h2 className="mt-6 text-4xl font-black leading-[0.95] tracking-tight md:text-5xl lg:text-6xl">
-            Employers who want a front-end developer who can ship calm systems—then document them well enough that a team can keep shipping.
+            I am looking for front-end, product engineering, or AI workflow internships where careful
+            implementation, clear documentation, and maintainable UI matter.
           </h2>
 
           <p className="mt-6 max-w-[var(--measure)] text-sm text-white/80">
-            I like the work after the concept sprint: naming, component logic, empty states, and interaction rules.
-            If that’s useful, I’d love to talk.
+            I bring a responsible AI workflow: use the tools for speed, review the result carefully, and leave
+            the system easier to understand.
           </p>
         </div>
 
-        <div className="col-span-4 md:col-span-6 lg:col-span-4 lg:flex lg:items-end lg:justify-end">
+        <div className="col-span-4 md:col-span-6 lg:flex lg:col-span-4 lg:items-end lg:justify-end">
           <div className="flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-end">
             <a
               className="inline-flex items-center justify-center border-[var(--border-w)] border-[var(--border-color)] bg-[var(--accent-color)] px-5 py-3 font-black uppercase tracking-tight text-[var(--bg-color)] transition-colors hover:bg-[var(--accent-2-color)]"

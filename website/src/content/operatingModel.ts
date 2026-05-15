@@ -13,24 +13,24 @@ export type FacultyNote = {
 
 export const operatingCards: OperatingCard[] = [
   {
-    title: "FIND THE REPEATED DECISION",
-    body: "I look for the rule the interface keeps forcing people to relearn, then turn that into a reusable component or status pattern.",
+    title: "DEFINE THE PROBLEM FIRST",
+    body: "I define the user, decision, and success criteria before asking AI to generate anything.",
   },
   {
-    title: "PROVE THE EDGE STATES EARLY",
-    body: "I validate empty states, loading states, errors, and navigation paths before polishing. If the states hold, the UI holds.",
+    title: "REVIEW THE AI-ASSISTED DRAFT",
+    body: "I use AI for speed, then validate behavior through code review, edge states, accessibility checks, and build verification.",
   },
   {
-    title: "SHIP THE EXPLANATION WITH IT",
-    body: "I document the naming, decisions, and constraints so the next person can extend the system without guessing.",
+    title: "DOCUMENT THE SYSTEM",
+    body: "I ship the reasoning, constraints, and audit notes so the next person can maintain the system.",
   },
 ];
 
 export const facultyNote: FacultyNote = {
-  eyebrow: "Faculty Note",
+  eyebrow: "Concept Client Review",
   quote:
-    "Joseph doesn’t stop at the clean frame. The work gets stronger when it reaches naming, states, and release notes—where a product becomes maintainable.",
-  name: "Avery Kim",
-  title: "NJIT Design Studio Staff",
-  disclaimer: "Placeholder quote for layout. Replace with a real testimonial before publishing.",
+    "Joseph was easy to work with because he explained the tradeoffs clearly. He connected design choices to business goals, then documented the structure so the site could keep improving.",
+  name: "Small Business Website Concept",
+  title: "Representative review goal for Grounded Coffee Co.",
+  disclaimer: "Future-state client-style feedback for the portfolio storefront concept.",
 };

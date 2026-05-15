@@ -3,6 +3,37 @@ export type SpecsRow = {
   value: string;
 };
 
+export type ProjectArtifact = {
+  title: string;
+  body: string;
+  ctaLabel?: string;
+  ctaUrl?: string;
+};
+
+export type ProjectImage = {
+  src: string;
+  alt: string;
+  caption: string;
+};
+
+export type PortfolioProject = {
+  id: string;
+  title: string;
+  summary: string;
+  role: string;
+  stack: string[];
+  status: string;
+  proofAngle: string;
+  problem: string;
+  userNeed: string;
+  whatIBuilt: string[];
+  aiWorkflow: string[];
+  humanAudit: string[];
+  impact: string;
+  artifact: ProjectArtifact;
+  images: ProjectImage[];
+};
+
 export type MethodNote = {
   challenge: string;
   architecturalChoice: string;
