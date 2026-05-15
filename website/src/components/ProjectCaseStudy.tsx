@@ -8,10 +8,10 @@ type ProjectCaseStudyProps = {
 function DetailList({ title, items }: { title: string; items: string[] }) {
   return (
     <article className="border border-[var(--border-color)] p-4">
-      <div className="poster-header inline-flex items-baseline px-2 py-1 text-xs font-black uppercase tracking-wider">
+      <h3 className="text-xs font-black uppercase tracking-wider text-[var(--accent-color)]">
         {title}
-      </div>
-      <ul className="mt-3 space-y-2 text-sm">
+      </h3>
+      <ul className="mt-4 space-y-2 text-sm text-white/80">
         {items.map((item) => (
           <li key={item} className="flex gap-3">
             <span className="mt-2 h-2 w-2 bg-[var(--accent-color)]" aria-hidden="true" />
@@ -30,10 +30,7 @@ function ProjectImageGallery({ project }: { project: PortfolioProject }) {
 
   return (
     <div>
-      <div className="inline-flex items-baseline gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
-        <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
-        <span>Visual Evidence</span>
-      </div>
+      <h3 className="text-xs font-black uppercase tracking-wider text-[var(--accent-2-color)]">Visual Evidence</h3>
 
       <div className={`mt-4 grid gap-4 ${project.images.length > 1 ? "md:grid-cols-2" : ""}`}>
         {project.images.map((image) => (
@@ -49,7 +46,7 @@ function ProjectImageGallery({ project }: { project: PortfolioProject }) {
                 loading="lazy"
               />
             </div>
-            <figcaption className="p-3 text-xs font-semibold uppercase tracking-wider text-white/75">
+            <figcaption className="p-3 text-xs font-semibold uppercase tracking-wider text-white/70">
               {image.caption}
             </figcaption>
           </figure>
@@ -75,17 +72,31 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         </h2>
       </div>
 
+      <div className="border-b-[var(--border-w)] border-[var(--border-color)] bg-[var(--bg-color)] p-5">
+        <dl className="grid gap-4 text-sm md:grid-cols-3">
+          <div>
+            <dt className="font-black uppercase text-[var(--accent-color)]">Type</dt>
+            <dd className="mt-1 text-white/80">{project.status}</dd>
+          </div>
+          <div>
+            <dt className="font-black uppercase text-[var(--accent-color)]">Focus</dt>
+            <dd className="mt-1 text-white/80">{project.role}</dd>
+          </div>
+          <div>
+            <dt className="font-black uppercase text-[var(--accent-color)]">Main Proof</dt>
+            <dd className="mt-1 text-white/80">{project.proofAngle}</dd>
+          </div>
+        </dl>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="border-b-[var(--border-w)] border-[var(--border-color)] p-6 lg:col-span-7 lg:border-b-0 lg:border-r-[var(--border-w)]">
           <ProofArtifactBlock artifact={project.artifact} />
         </div>
 
         <div className="p-6 lg:col-span-5">
-          <div className="inline-flex items-baseline gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
-            <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
-            <span>Impact</span>
-          </div>
-          <p className="mt-3 max-w-[var(--measure)]">{project.impact}</p>
+          <h3 className="text-xs font-black uppercase tracking-wider text-[var(--accent-2-color)]">Impact</h3>
+          <p className="mt-3 max-w-[var(--measure)] text-white/85">{project.impact}</p>
 
           <dl className="mt-6 space-y-4 border-t border-[var(--border-color)] pt-4 text-sm">
             <div>

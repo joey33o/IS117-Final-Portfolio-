@@ -6,7 +6,7 @@ import { portfolioProjects } from "@/src/content/projects";
 
 export default function Home() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       <section className="pop-panel border-[var(--border-w)] border-[var(--border-color)] bg-[var(--surface-color)] p-6">
         <div className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-12">
           <div className="col-span-4 md:col-span-6 lg:col-span-8">

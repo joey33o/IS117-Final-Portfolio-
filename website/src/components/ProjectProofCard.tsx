@@ -7,7 +7,7 @@ type ProjectProofCardProps = {
 export function ProjectProofCard({ project }: ProjectProofCardProps) {
   return (
     <article className="border border-[var(--border-color)] bg-[var(--bg-color)] p-5">
-      <div className="inline-flex items-center gap-2 border border-[var(--border-color)] px-3 py-2 text-xs font-black uppercase tracking-wider">
+      <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[var(--accent-2-color)]">
         <span className="h-2 w-2 bg-[var(--accent-2-color)]" aria-hidden="true" />
         <span>{project.status}</span>
       </div>
@@ -38,7 +38,7 @@ export function ProjectProofCard({ project }: ProjectProofCardProps) {
       </ul>
 
       <a
-        className="mt-5 inline-flex items-center justify-center border-[var(--border-w)] border-[var(--border-color)] bg-[var(--surface-color)] px-4 py-3 font-black uppercase tracking-tight transition-colors hover:bg-[var(--accent-2-color)] hover:text-[var(--bg-color)]"
+        className="mt-5 inline-flex items-center justify-center border-[var(--border-w)] border-[var(--border-color)] bg-[var(--accent-color)] px-4 py-3 font-black uppercase tracking-tight text-[var(--bg-color)] transition-colors hover:bg-[var(--accent-2-color)]"
         href={`#${project.id}`}
       >
         View proof

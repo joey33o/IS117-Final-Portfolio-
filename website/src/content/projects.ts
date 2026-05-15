@@ -19,7 +19,6 @@ export const portfolioProjects: PortfolioProject[] = [
       "Modeled telescope history as eras and milestones rendered through reusable sections.",
       "Built a CSS-variable theme system controlled by a body-level state class.",
       "Configured a static export path for GitHub Pages project hosting.",
-      "Checked responsive layout, paragraph measure, focus visibility, and reduced-motion behavior.",
     ],
     aiWorkflow: [
       "Used AI to compare implementation paths for the scroll-triggered theme transition.",
@@ -30,7 +29,6 @@ export const portfolioProjects: PortfolioProject[] = [
       "Reviewed breakpoints to confirm grid alignment and readable text measure.",
       "Checked keyboard flow and visible focus states.",
       "Verified reduced-motion behavior so the story remains readable without animation.",
-      "Ran build and deployment checks for static export assumptions.",
     ],
     impact:
       "Demonstrates a complete front-end system: concept, content structure, interaction logic, accessibility checks, and static deployment.",
@@ -67,7 +65,6 @@ export const portfolioProjects: PortfolioProject[] = [
       "Designed a ticket queue with urgency, category, confidence, and response status.",
       "Defined states for new, low-confidence, approved, edited, and rejected suggestions.",
       "Created a review flow where AI output stays provisional until a person acts.",
-      "Mapped empty, loading, error, and low-confidence states before polishing the interface.",
     ],
     aiWorkflow: [
       "Simulated AI-generated category, urgency, summary, confidence score, and reply draft.",
@@ -78,7 +75,6 @@ export const portfolioProjects: PortfolioProject[] = [
       "Every suggestion requires approve, edit, or reject.",
       "Low-confidence messages are visually flagged and sorted into a review lane.",
       "Draft replies are editable before use.",
-      "Evaluation notes make false positives visible instead of hiding them.",
     ],
     impact:
       "Shows how AI can reduce sorting work while preserving review, accountability, and clear product states.",
@@ -118,7 +114,6 @@ export const portfolioProjects: PortfolioProject[] = [
       "Planned a homepage, product grid, product detail cards, and cart summary mockup.",
       "Structured products by roast, flavor notes, format, price, and subscription eligibility.",
       "Outlined filter states for roast level, flavor profile, and subscription-friendly products.",
-      "Added FAQ, shipping, returns, and empty-cart content to reduce purchase hesitation.",
     ],
     aiWorkflow: [
       "Used AI to draft product descriptions, flavor note variations, FAQ copy, and brand voice options.",
@@ -129,7 +124,6 @@ export const portfolioProjects: PortfolioProject[] = [
       "Reviewed product copy for tone, consistency, and buyer clarity.",
       "Checked that filter labels match the product metadata.",
       "Validated mobile calls to action and cart-state language.",
-      "Removed any claims that would require real sourcing, reviews, or fulfillment data.",
     ],
     impact:
       "Demonstrates the ability to build a polished business website that supports product discovery, trust, and conversion.",
